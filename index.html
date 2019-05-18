@@ -3,10 +3,12 @@
 	<head>
 		<link rel="icon" href="icon-ss.ico">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<meta name="author" content="Xander Pijan">
 		<meta name="description" content="Xander Pijan's Portfolio">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<title>Xander Pijan's Portfolio</title>
@@ -24,12 +26,24 @@
 			height: 50px;
 		}
 		
+		#logo2	{
+			height: 100px;
+		}
+		
 		#myPic	{
 			height: 200px;
 		}
 		
 		#content1	{
 			word-wrap: nowrap;
+		}
+		
+		#skills img	{
+			height: 50px;
+		}
+		
+		img#sub	{
+			height: 35px;
 		}
 		
 		.nav-item a {
@@ -63,6 +77,18 @@
 			-webkit-transform: scaleX(1);
 			transform: scaleX(1);
 		}
+		
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0.6;
+			background-color: #dc3545;
+		}
 	</style>
 	<body>
 		<div class="border border-bottom p-4">
@@ -78,13 +104,13 @@
 							<!-- <a class="nav-link text-uppercase" href="#">Home</a> -->
 						<!-- </li> -->
 						<li class="nav-item text-center">
-							<a class="nav-link text-uppercase" href="#profile1">Overview</a>
+							<a class="nav-link text-uppercase" href="#profile">Overview</a>
 						</li>
 						<li class="nav-item text-center">
-							<a class="nav-link text-uppercase" href="#">Works</a>
+							<a class="nav-link text-uppercase" href="#skills">Skills</a>
 						</li>
 						<li class="nav-item text-center">
-							<a class="nav-link text-uppercase" href="#">Link 1</a>
+							<a class="nav-link text-uppercase" href="#works">Works</a>
 						</li>
 						<li class="nav-item text-center">
 							<a class="nav-link text-uppercase" href="#">Link 2</a>
@@ -112,19 +138,22 @@
 		</div>
 		<!-- Greetings -->
 		<div class="container-fluid bg-success text-white text-center py-4">
-			<p class="display-1 py-2">Hello, Visitor!</p>
+			<p class="display-1 py-2">Hello, <span id="username">Visitor</span>!</p>
 			<p class="py-2">Welcome to Xanderp's portfolio!</p>
 		</div>
 		<!-- Profile -->
-		<div id="profile1" class="container py-4 mb-4">
+		<div id="profile" class="container py-4 mb-4">
 			<div class="row">
-				<div class="col border-right d-flex align-items-center justify-content-center">
+				<div class="col border-right d-flex flex-column align-items-center justify-content-center">
 					<img id="myPic" class="border border-secondary rounded-circle" src="pijan rr.jpg" />
+					<!-- <i id="iconGithub" class="fab fa-2x my-2 fa-github"></i> -->
+					<!-- <i id="iconEmail" class="fas fa-2x my-2 fa-at"></i> -->
+					<!-- <i id="iconLin" class="fab fa-2x my-2 fa-linkedin"></i> -->
 				</div>
-				<div id="content1" class="col border-left p-4">
+				<div id="content" class="col border-left p-4">
 					<h3 class="text-uppercase font-weight-bold">About Me</h3>
 					<p class="text-justify">
-						I am <b>Alexander Patrick Pijan</b>. You can also call me <b>Xander</b>. I am from Mandaluyong City, a tiger-hearted Mandaleño.
+						I am <b>Alexander Patrick Pijan</b>. You can also call me <b>Xander</b>. I am from Mandaluyong City, a tiger-hearted Mandaleño. PUPian.
 						<br />
 						<br />
 						I like things to be organized. A little perfectionist. Pressure learner.
@@ -143,22 +172,192 @@
 			</div>
 		</div>
 		<!-- Skills -->
-		<div class="container py-4">
-			<h3 class="text-uppercase font-weight-bold">Skills</h3>
+		<div id="skills" class="container py-4">
+			<h3 class="text-uppercase font-weight-bold text-center">Known Technologies</h3>
 			<hr />
-			<div class="card-group">
-				<div class="card">
-					<h6 class="">Web Development</h6>
+			<div class="card-deck">
+				<div class="card border-0">
+					<div class="card-header bg-white">
+						<span class="font-weight-bold">Web Development</span>
+					</div>
+					<div class="card-body text-center">
+						<!-- HTML/HTML5 -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" title="HTML5" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 90%; background-image: linear-gradient(-90deg,rgb(229,76,33),rgb(242,101,37));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">HTML/HTML5: 9</div>
+								</div>
+							</div>
+						</div>
+						<!-- CSS/CSS3 -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img src="https://i1.wp.com/appliedparticletechnology.com/wp-content/uploads/2016/03/css-logo.png?fit=500%2C500&ssl=1&w=640" title="CSS3" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 80%; background-image: linear-gradient(-90deg,rgb(10,114,118),rgb(22,161,218));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">CSS/CSS3: 8</div>
+								</div>
+							</div>
+						</div>
+						<!-- Bootstrap -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img id="sub" src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png" title="Bootstrap" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(51,19,99),rgb(71,27,135),rgb(92,40,168),rgb(133,80,210));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Bootstrap: 8.5</div>
+								</div>
+							</div>
+						</div>
+						<!-- Font Awesome -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img id="sub" class="mb-2" src="https://pbs.twimg.com/profile_images/1113090077511618560/JqER8seZ.png" title="Font Awesome" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 95%; background-color: rgb(49,141,222);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Font Awesome: 9.5</div>
+								</div>
+							</div>
+						</div>
+						<!-- Javascript -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" title="JS" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-dark" role="progressbar" style="width: 70%; background-color: rgb(247,224,24);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">JavaScript: 7</div>
+								</div>
+							</div>
+						</div>
+						<!-- jQuery -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img id="sub" src="https://avatars0.githubusercontent.com/u/70142?s=200&v=4" title="jQuery" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 70%; background-color: rgb(16,104,173);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">jQuery: 7</div>
+								</div>
+							</div>
+						</div>
+						<!-- AJAX -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img id="sub" src="https://kraigpopelka.info/images/theme/icons/ajax.svg" title="AJAX" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 70%; background-color: rgb(0,140,219);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">AJAX: 7</div>
+								</div>
+							</div>
+						</div>
+						<!-- PHP -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img style="height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1024px-PHP-logo.svg.png" title="PHP" />
+								<!-- <img src="https://pngimg.com/uploads/php/php_PNG50.png" title="PHP" /> -->
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 75%; background-image: linear-gradient(-90deg,rgb(70,74,138),rgb(119,124,181));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">PHP: 7.5</div>
+								</div>
+							</div>
+						</div>
+						<!-- MySQL -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-2">
+								<img src="https://cdn.worldvectorlogo.com/logos/mysql.svg" title="MySQL" />
+							</div>
+							<div class="col-10">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 90%; background-image: linear-gradient(-90deg,rgb(248,152,29),rgb(93,135,161));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">MySQL: 9</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="card">
-					<h6 class="">Database Administration</h6>
-				</div>
-				<div class="card">
-					<h6 class="">Database Administration</h6>
+				<div class="card border-0">
+					<div class="card-header bg-white">
+						<span class="font-weight-bold">Database Administration</span>
+					</div>
+					<div class="card-body">
+						<img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" title="phpMyAdmin" />		
+						<img class="mb-2" src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg" title="MSSQL" />		
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Works -->
+		<h3 id="works" class="text-uppercase font-weight-bold text-center my-3">Works</h3>
+		<div id="" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="3.jpg" class="d-block w-100" alt="...">
+					<div class="d-md-block overlay">
+					</div>
+					<div class="carousel-caption">
+						<img id="logo2" src="logo-w-x.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Works: Content -->
+		<div class="container py-4">
+			<div class="row">
+				<div class="col border-right d-flex flex-column align-items-center justify-content-center">
+					<img id="myPic" src="logo-a1.png" />
+				</div>
+				<div id="content" class="col border-left p-4">
+					<h3 class="font-weight-bold">ReFeel</h3>
+					<h5 class="">Blood Bank Monitoring and Inventory System</h5>
+					<p class="text-justify">
+						The Blood Bank Monitoring and Inventory System is capable of handling all the records of donors and easily view them for future reference which would help the user to make sure that they receive the highest quality of blood possible. It is also capable of monitoring the quality and quantity of blood bags in the storage to help them know the current status of their storages. The system fulfills its purpose to help maintain and easily record then view the records of the donors and maintain the blood inventory.
+					</p>
+					<div class="col d-flex align-items-center mb-2">
+						<div class="col d-flex align-items-center mb-2">
+							<i class="fa fa-2x fa-medal mr-3"></i>
+							<div class="d-flex-column">
+								<h5>4<sup>th</sup> Place</h5>
+								Capstone Project Top 12 Best Systems Ranking Defense
+							</div>
+						</div>
+						<div class="col d-flex align-items-center mb-3">
+							<i class="fa fa-2x fa-ribbon mr-3"></i>
+							<div class="d-flex-column">
+								<h5>Finalist</h5>
+								2019 Best Undergraduate Research for Science and Technology
+							</div>
+						</div>
+					</div>
+					<div class="d-flex align-items-center">
+						<i class="fab fa-2x fa-github mr-3"></i>
+						<a href="https://github.com/krakenhead/ReFeel">https://github.com/krakenhead/ReFeel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer bg-success text-white p-4 text-center">
+			<img class="bg-success mr-4" src="icon-ss.png" />
+			<!-- <div class="d-flex m-auto justify-content-center border col-6"> -->
+				<!-- <i class="fab fa-2x fa-github"></i> -->
+				<!-- <i class="fas fa-2x fa-at"></i> -->
+				<!-- <i class="fab fa-2x fa-linkedin"></i> -->
+			<!-- </div> -->
+		</div>
 	</body>
+	<!-- Fetch username in browser -->
+	<script type="text/javascript">
+		<!-- IE -->
+    var WinNetwork = new ActiveXObject("WScript.Network");
+    document.getElementById("username").innerHTML = WinNetwork.UserName;
+	</script>
 	<script>
 		$(document).ready(function(){
 			// Add smooth scrolling to all links
@@ -176,7 +375,7 @@
 					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 					$('html, body').animate({
 						scrollTop: $(hash).offset().top
-					}, 800, function(){
+					}, 0, function(){
 
 						// Add hash (#) to URL when done scrolling (default click behavior)
 						window.location.hash = hash;
