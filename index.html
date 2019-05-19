@@ -27,7 +27,7 @@
 		}
 		
 		#logo2	{
-			height: 100px;
+			max-height: 100px;
 		}
 		
 		#myPic	{
@@ -287,23 +287,55 @@
 					<div class="card-header bg-white">
 						<span class="font-weight-bold">Database Administration</span>
 					</div>
-					<div class="card-body">
-						<img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" title="phpMyAdmin" />		
-						<img class="mb-2" src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg" title="MSSQL" />		
+					<div class="card-body text-center">
+						<!-- phpMyAdmin -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-3">
+								<img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" title="phpMyAdmin" />		
+							</div>
+							<div class="col-9">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(248,152,29),rgb(93,135,161));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">phpMyAdmin: 8.5</div>
+								</div>
+							</div>
+						</div>
+						<!-- MSSQL -->
+						<div class="d-flex align-items-center mb-2">
+							<div class="col-3">
+								<img class="mb-2" src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg" title="MSSQL" />		
+							</div>
+							<div class="col-9">
+								<div class="progress">
+									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(179,56,60),rgb(144,156,169));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">MSSQL: 8.5</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-left">
+							<span class="font-weight-bold">Database Skills</span>
+							<ul>
+								<li>Can do Normalization.</li>
+								<li>Can do Stored Procedure.</li>
+								<li>Can do Transactions.</li>
+								<li>Designs ERD with Microsoft Visio.</li>
+								<li>Known alternative clauses and scalar functions on different DBMS.</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Works -->
-		<h3 id="works" class="text-uppercase font-weight-bold text-center my-3">Works</h3>
-		<div id="" class="carousel slide" data-ride="carousel">
+		<div id="works" class="container py-3">
+			<h3 class="text-uppercase font-weight-bold text-center my-3">Works</h3>
+		</div>
+		<div class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="3.jpg" class="d-block w-100" alt="...">
 					<div class="d-md-block overlay">
 					</div>
 					<div class="carousel-caption">
-						<img id="logo2" src="logo-w-x.png" />
+						<img id="logo2" class="img-fluid" src="logo-w-x.png" />
 					</div>
 				</div>
 			</div>
@@ -320,16 +352,16 @@
 					<p class="text-justify">
 						The Blood Bank Monitoring and Inventory System is capable of handling all the records of donors and easily view them for future reference which would help the user to make sure that they receive the highest quality of blood possible. It is also capable of monitoring the quality and quantity of blood bags in the storage to help them know the current status of their storages. The system fulfills its purpose to help maintain and easily record then view the records of the donors and maintain the blood inventory.
 					</p>
-					<div class="col d-flex align-items-center mb-2">
-						<div class="col d-flex align-items-center mb-2">
+					<div class="col d-flex align-items-top mb-2">
+						<div class="col d-flex align-items-top mb-2">
 							<i class="fa fa-2x fa-medal mr-3"></i>
 							<div class="d-flex-column">
 								<h5>4<sup>th</sup> Place</h5>
 								Capstone Project Top 12 Best Systems Ranking Defense
 							</div>
 						</div>
-						<div class="col d-flex align-items-center mb-3">
-							<i class="fa fa-2x fa-ribbon mr-3"></i>
+						<div class="col d-flex align-items-top mb-3">
+							<i class="fa fa-2x fa-medal mr-3"></i>
 							<div class="d-flex-column">
 								<h5>Finalist</h5>
 								2019 Best Undergraduate Research for Science and Technology
