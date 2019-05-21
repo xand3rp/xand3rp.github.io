@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#logo	{
+	height: 50px;
+}
+
+#logo2	{
+	width: 100%;
+	min-width: 150px;
+	max-width: 200px;
+}
+
+#myPic	{
+	height: 200px;
+}
+
+#content1	{
+	word-wrap: nowrap;
+}
+
+/* #skills img	{ */
+	/* min-height: 20px; */
+	/* max-height: 50px; */
+/* } */
+
+/* img#sub	{ */
+	/* height: 35px; */
+/* } */
+
+#skills img	{
+	width: 100%;
+	min-width: 35px;
+	max-width: 55px;
+}
+
+img#sub	{
+	width: 100%;
+	min-width: 25px;
+	max-width: 35px;
+}
+
+.nav-item a {
+	position: relative;
+	color: #28a745;
+	text-decoration: none;
+}
+
+.nav-item a:hover {
+	color: #28a745;
+	text-decoration: none;
+}
+
+.nav-item a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #28a745;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	background-color: #dc3545;
+}
