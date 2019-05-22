@@ -1,3 +1,4 @@
+/* Overrides */
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -5,6 +6,25 @@
 html {
 	scroll-behavior: smooth;
 }
+
+/* Bootstrap */
+
+#education .carousel-caption {
+  transform: translateY(-50%);
+  bottom: 0;
+  top: 50%;
+}
+
+#education .carousel-caption p {
+
+}
+
+#education  img	{
+	min-height: 100px;
+	max-height: 200px;
+}
+
+/* Custom Styles */
 
 #logo	{
 	height: 50px;
@@ -18,10 +38,6 @@ html {
 
 #myPic	{
 	height: 200px;
-}
-
-#content1	{
-	word-wrap: nowrap;
 }
 
 /* #skills img	{ */
@@ -44,6 +60,31 @@ img#sub	{
 	min-width: 25px;
 	max-width: 35px;
 }
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+}
+
+.overlayEduc1 {
+	background-color: #032f9e;
+}
+
+.overlayEduc2 {
+	background-color: #800000;
+}
+
+.overlayWorks {
+	background-color: #dc3545;
+}
+
+/* Animations */
 
 .nav-item a {
 	position: relative;
@@ -75,16 +116,4 @@ img#sub	{
 	visibility: visible;
 	-webkit-transform: scaleX(1);
 	transform: scaleX(1);
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0.6;
-	background-color: #dc3545;
 }

@@ -1,3 +1,99 @@
+background-color: rgb();
+	<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/530331_330481413679201_359193095_n.jpg?_nc_cat=103&_nc_ht=scontent-hkg3-1.xx&oh=4618b8d55b3ab39b414f10de53702c81&oe=5D639115" />
+					<div class="d-md-block overlay overlayEduc1"></div>
+					<div class="carousel-caption">
+						<img src="assets/img/eris-t.png" />
+						<p class="font-weight-bold my-1">
+							Eulogio Rodriguez Integrated School
+						</p>
+						<p>
+							Primary (2005-2011)
+							<br />
+							Secondary (2011-2015)
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg" />
+					<div class="d-md-block overlay overlayEduc2"></div>
+					<div class="carousel-caption">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png" />
+						<p class="font-weight-bold my-1">
+							Polytechnic University of the Philippines
+						</p>
+						<p>
+							Tertiary (2015-2019)
+							<br />
+							Bachelor of Science in Information Technology
+							<br />
+							Major in Information Systems Development
+						</p>
+					</div>
+				</div>
+			</div>
+	<div class="row">
+				<div class="col">
+					<img class="card-img-top" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/530331_330481413679201_359193095_n.jpg?_nc_cat=103&_nc_ht=scontent-hkg3-1.xx&oh=4618b8d55b3ab39b414f10de53702c81&oe=5D639115" />
+					<div class="d-md-block overlayEduc">
+					</div>
+					<div class="carousel-caption pb-0">
+					</div>
+				</div>
+				<div class="col">
+					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg" />
+				</div>
+			</div>
+
+<p class="text-left">
+						I am <b>Alexander Patrick Pijan</b>. You can also call me <b>Xander</b>. I am from Mandaluyong City, a tiger-hearted Mandaleño. PUPian.
+						<br />
+						<br />
+						I like things to be organized. A little perfectionist. Pressure learner.
+						<br />
+						<br />
+						Passionate in learning anything about web development and design, database administration, and a bit of animation.
+						<br />
+						<br />
+						I want to be an aspiring Web Developer/Designer, and/or a Database Administrator inspired by my professor.
+						<br />
+						<br />
+						<!-- <a class="float-right" href="#">Read more...</a> -->
+						<button class="btn btn-sm btn-outline-success float-right">Read More</button>
+					</p>
+
+<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/530331_330481413679201_359193095_n.jpg?_nc_cat=103&_nc_ht=scontent-hkg3-1.xx&oh=4618b8d55b3ab39b414f10de53702c81&oe=5D639115" />
+					<div class="card-header bg-white">
+						Eulogio Rodriguez Integrated School
+					</div>
+					<div class="card-body">
+						Primary (2005-2011)
+						<br />
+						Secondary (2011-2015)
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg" />
+					<div class="card-header bg-white font-weight-bold">
+						Polytechnic University of the Philippines
+					</div>
+					<div class="card-body">
+						<p>
+							Tertiary (2015-2019)
+						</p>
+						<p>
+							Bachelor of Science in Information Technology
+						</p>
+						<p>
+							Major in Information Systems Development
+						</p>
+					</div>
+				</div>
+			</div>
+
 <!-- CSS/CSS3 -->
 						<div class="d-flex align-items-center mb-2">
 							<div class="col-2">
@@ -109,3 +205,19 @@
 								<li>Known alternative clauses and scalar functions on different DBMS.</li>
 							</ul>
 						</div>
+						
+						
+			
+			<!-- <div class="d-flex"> -->
+				<!-- <div class=""> -->
+					<!-- <img id="logo" class="bg-success" src="icon-ss.png" /> -->
+				<!-- </div> -->
+				<!-- <div class="col d-flex align-items-center border"> -->
+					<!-- <a class="h6 text-uppercase" href="">Home</a> -->
+					<!-- <a class="h6 text-uppercase" href="">Home</a> -->
+					<!-- <a class="h6 text-uppercase" href="">Home</a> -->
+				<!-- </div> -->
+				<!-- <div class=""> -->
+					<!-- <img id="logo" class="bg-success" src="icon-ss.png" /> -->
+				<!-- </div> -->
+			<!-- </div> -->
