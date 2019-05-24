@@ -9,19 +9,48 @@ html {
 
 /* Bootstrap */
 
-#education .carousel-caption {
-  transform: translateY(-50%);
-  bottom: 0;
-  top: 50%;
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	#education .position-absolute img	{
+		height: 55px;
+	}
+	#education .position-absolute p	{
+		font-size: 2vh;
+	}
 }
 
-#education .carousel-caption p {
-
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#education .position-absolute img	{
+		height: 25px;
+	}
+	#education .position-absolute p	{
+		font-size: 1.5vh;
+	}
 }
 
-#education  img	{
-	min-height: 100px;
-	max-height: 200px;
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#education .position-absolute img	{
+		height: 35px;
+	}
+	#education .position-absolute p	{
+		font-size: 2vh;
+	}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#education .position-absolute img	{
+		height: 55px;
+	}
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#education .position-absolute img	{
+		height: 85px;
+	}
 }
 
 /* Custom Styles */
@@ -39,6 +68,11 @@ html {
 #myPic	{
 	height: 200px;
 }
+
+/* #educ1	{ */
+	/* background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg"); */
+	/* background-size: cover; */
+/* } */
 
 /* #skills img	{ */
 	/* min-height: 20px; */

@@ -1,3 +1,70 @@
+<div id="educ1" class="d-flex align-items-center mb-2">
+				<div class="col text-right">
+					<img src="assets/img/eris-t.png" />
+				</div>
+				<div class="col">
+					<p class="font-weight-bold my-1">
+						Eulogio Rodriguez Integrated School
+					</p>
+					<p>
+						Primary (2005-2011)
+						<br />
+						Secondary (2011-2015)
+					</p>
+				</div>
+			</div>
+			<div class="d-flex align-items-center">
+				<div class="col text-right">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png" />
+				</div>
+				<div class="col">
+					<p class="font-weight-bold my-1">
+						Polytechnic University of the Philippines
+					</p>
+					<p>
+						Tertiary (2015-2019)
+						<br />
+						Bachelor of Science in Information Technology
+						<br />
+						Major in Information Systems Development
+					</p>
+				</div>
+			</div>
+
+<div class="d-flex align-items-center mb-2">
+				<div class="col text-right">
+					<img src="assets/img/eris-t.png" />
+				</div>
+				<div class="col">
+					<p class="font-weight-bold my-1">
+						Eulogio Rodriguez Integrated School
+					</p>
+					<p>
+						Primary (2005-2011)
+						<br />
+						Secondary (2011-2015)
+					</p>
+				</div>
+			</div>
+			<div class="d-flex align-items-center">
+				<div class="col text-right">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png" />
+				</div>
+				<div class="col">
+					<p class="font-weight-bold my-1">
+						Polytechnic University of the Philippines
+					</p>
+					<p>
+						Tertiary (2015-2019)
+						<br />
+						Bachelor of Science in Information Technology
+						<br />
+						Major in Information Systems Development
+					</p>
+				</div>
+			</div>
+
+
 background-color: rgb();
 	<div class="card-deck">
 				<div class="card">
