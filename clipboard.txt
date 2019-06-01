@@ -85,19 +85,9 @@ background-color: rgb();
 				<div class="card">
 					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg" />
 					<div class="d-md-block overlay overlayEduc2"></div>
-					<div class="carousel-caption">
-						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png" />
-						<p class="font-weight-bold my-1">
-							Polytechnic University of the Philippines
-						</p>
-						<p>
-							Tertiary (2015-2019)
-							<br />
-							Bachelor of Science in Information Technology
-							<br />
-							Major in Information Systems Development
-						</p>
-					</div>
+					
+					
+					
 				</div>
 			</div>
 	<div class="row">
