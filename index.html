@@ -41,15 +41,15 @@
 		<!-- Greetings -->
 		<div class="bg-success text-white text-center py-4 d-flex justify-content-center align-items-center vh-100">
 			<div class="">
-				<p class="display-1 py-2">
-					Hello, 
+				<p class="display-2 py-2">
+					Greetings, 
 					<span id="username">
 						<!-- Visitor -->
 						<?php
-							echo getenv("username"); 
+							$sUserName = getenv("username"); 
+							echo $sUserName != "" ? $sUserName . "!" : "Visitor!";
 						?>
 					</span>
-					!
 				</p>
 				<p class="py-2">Welcome to my portfolio!</p>
 			</div>
