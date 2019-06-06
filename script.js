@@ -1,8 +1,8 @@
 // Fetch username in browser
 {
-		// IE
-    var WinNetwork = new ActiveXObject("WScript.Network");
-    document.getElementById("username").innerHTML = WinNetwork.UserName;
+	// IE
+	var WinNetwork = new ActiveXObject("WScript.Network");
+	document.getElementById("username").innerHTML = WinNetwork.UserName;
 }
 // Smooth scrolling
 {
@@ -31,9 +31,9 @@
 		});
 	});
 }
-
 // Bootstrap
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+{
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+}
