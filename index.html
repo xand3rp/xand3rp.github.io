@@ -2,534 +2,137 @@
 <html>
 	<head>
 		<link rel="icon" href="assets/icon-ss.ico">
+
+		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+		<!-- Popper.js - Custom CSS -->
+		<link rel="stylesheet" href="popper.css">
+
+		<!-- Wave Animation -->
+		<link rel="stylesheet" href="waves.css">
+
+		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css">
+
 		<meta name="author" content="Xander Pijan">
 		<meta name="description" content="Xander Pijan's Portfolio">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-		<title>Xander Pijan's Portfolio</title>
+
+		<title>xp.io</title>
+
+		<style>
+			#tooltip {
+				background: #333;
+				color: white;
+				font-weight: bold;
+				padding: 4px 8px;
+				font-size: 13px;
+				border-radius: 4px;
+			}
+		</style>
 	</head>
 	<body>
-		<!-- <div id="navBar" class="border border-bottom p-4"> -->
-			<!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
-				<!-- <img id="logo" class="bg-success mr-4" src="assets/img/icon-ss.png" /> -->
-				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
-					<!-- <span class="navbar-toggler-icon"></span> -->
-				<!-- </button> -->
-				<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-					<!-- <ul class="navbar-nav"> -->
-						<!-- <li class="nav-item text-center"> -->
-							<!-- <a class="nav-link text-uppercase" href="#profile">Overview</a> -->
-						<!-- </li> -->
-						<!-- <li class="nav-item text-center"> -->
-							<!-- <a class="nav-link text-uppercase" href="#education">Education</a> -->
-						<!-- </li> -->
-						<!-- <li class="nav-item text-center"> -->
-							<!-- <a class="nav-link text-uppercase" href="#skills">Skills</a> -->
-						<!-- </li> -->
-						<!-- <li class="nav-item text-center"> -->
-							<!-- <a class="nav-link text-uppercase" href="#works">Works</a> -->
-						<!-- </li> -->
-						<!-- <li class="nav-item text-center"> -->
-							<!-- <a class="nav-link text-uppercase" href="#"></a> -->
-						<!-- </li> -->
-					<!-- </ul> -->
-				<!-- </div> -->
-			<!-- </nav> -->
-		<!-- </div> -->
-		<!-- Greetings -->
-		<div class="bg-success text-white text-center py-4 d-flex justify-content-center align-items-center vh-100">
-			<div class="">
-				<p class="display-2 py-2">
-					Greetings, 
-					<span id="username">
-						<!-- Visitor -->
-						<?php
-							$sUserName = getenv("username"); 
-							// $sUserName = get_current_user();
-							echo $sUserName != "" ? $sUserName . "!" : "Visitor!";
-						?>
-					</span>
-				</p>
-				<p class="py-2">Welcome to my portfolio!</p>
+		<!--Hey! This is the original version
+		of Simple CSS Waves-->
+		<div class="header">
+			<!--Content before waves-->
+			<div class="inner-header flex">
+				<!-- <h1>Xander Pijan</h1> -->
+				<img src="assets/img/icon-ss.png" alt="">
 			</div>
+			
+			<!--Waves Container-->
+			<div>
+				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+				<defs>
+				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+				</defs>
+				<g class="parallax">
+				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+				</g>
+				</svg>
+			</div>
+			<!--Waves end-->
 		</div>
-		<!-- Profile -->
-		<div id="profile" class="container py-4 mb-4">
-			<div class="row">
-				<div class="col d-flex align-items-center justify-content-center">
-					<img id="myPic" class="border border-secondary rounded-circle" src="assets/img/pijan rr.jpg" />
-				</div>
-				<div id="divider" class="border"></div>
-				<div id="content" class="col p-4">
-					<h3 class="text-uppercase font-weight-bold">About Me</h3>
-					<p>
-						I am <b>Alexander Patrick Pijan</b>. You can also call me <b>Xander</b>. I am from Mandaluyong City, a tiger-hearted Mandaleño. PUPian.
-					</p>
-					<p>
-						I like things to be organized. A little perfectionist. Pressure learner.
-					</p>
-					<p>
-						Passionate in learning anything about web development and design, database administration, and a bit of animation.
-					</p>
-					<p>
-						<!-- I want to be an aspiring Web Developer/Designer, and/or a Database Administrator inspired by my professor. -->
-						Inspired to be a Database Administrator. Aspired to be a Web Developer/Designer.
-					</p>
-					<button class="btn btn-sm btn-outline-success float-right">Read More</button>
-					<!-- <a class="float-right" href="#">Read more...</a> -->
+		<!--Header ends-->
+
+		<!--Content starts-->
+		<div class="content flex justify-content-around">
+			<!-- <i class="fa fa-laptop-code fa-3x mx-4"></i> -->
+			<img style="height: 150px;" src="assets/portfolio/portal.png" alt="">
+			<!-- <img style="height: 150px;" src="assets/portfolio/HEALS.png" alt="">
+			<img style="height: 150px;" src="assets/portfolio/BEAMS.png" alt=""> -->
+			<a href="Regal/">
+				<img style="height: 150px;" src="assets/portfolio/mockup-1.png" alt="">
+			</a>
+
+			<div class="carousel-item">
+				<img src="..." alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>...</h5>
+					<p>...</p>
 				</div>
 			</div>
 		</div>
-		<!-- Education -->
-		<div id="education" class="container py-4">
-			<h3 class="text-uppercase font-weight-bold text-center">Education</h3>
-			<hr />
-			<div class="card-deck">
-				<div class="card">
-					<img class="card-img-top" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/530331_330481413679201_359193095_n.jpg?_nc_cat=103&_nc_ht=scontent-hkg3-1.xx&oh=4618b8d55b3ab39b414f10de53702c81&oe=5D639115" />
-					<div class="d-md-block overlay overlayEduc1"></div>
-					<div class="position-absolute d-flex align-items-center justify-content-center text-white w-100 h-100 text-center">
-						<div>
-							<img class="" src="assets/img/eris-t.png" />
-							<p class="font-weight-bold my-1">
-								Eulogio Rodriguez Integrated School
-							</p>
-							<p class="">
-								Primary (2005-2011)
-								<br />
-								Secondary (2011-2015)
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Front_view_of_the_north_wing_portion_of_the_main_building_of_the_Polytechnic_University_of_the_Philippines_%28PUP%29_Mabini_Campus_at_Anonas_Street%2C_Santa_Mesa%2C_Manila.jpg" />
-					<div class="d-md-block overlay overlayEduc2"></div>
-					<div class="position-absolute d-flex align-items-center justify-content-center text-white w-100 h-100 text-center">
-						<div>
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Polytechnic_University_of_the_Philippines.svg/1200px-Polytechnic_University_of_the_Philippines.svg.png" />
-							<p class="font-weight-bold my-1">
-								Polytechnic University of the Philippines
-							</p>
-							<p>
-								Tertiary (2015-2019)
-								<br />
-								Bachelor of Science in Information Technology
-								<br />
-								Major in Information Systems Development
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Skills -->
-		<div id="skills" class="container py-4">
-			<h3 class="text-uppercase font-weight-bold text-center">Skills</h3>
-			<hr />
-			<!-- <div class="card-header bg-white"> -->
-				<!-- <span class="font-weight-bold text-uppercase">Technical</span> -->
-			<!-- </div> -->
-			<div class="card-deck">
-				<div class="card border-0">
-					<div class="card-header bg-white">
-						<span class="font-weight-bold">Web Development</span>
-					</div>
-					<div class="card-body">
-						<!-- HTML/HTML5 -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" title="HTML5" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 90%; background-image: linear-gradient(-90deg,rgb(229,76,33),rgb(242,101,37));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">HTML/HTML5: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- CSS/CSS3 -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="m-auto" src="https://i1.wp.com/appliedparticletechnology.com/wp-content/uploads/2016/03/css-logo.png?fit=500%2C500&ssl=1&w=640" title="CSS3" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 80%; background-image: linear-gradient(-90deg,rgb(10,114,118),rgb(22,161,218));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">CSS/CSS3: 8</div>
-								</div>
-							</div>
-						</div>
-						<!-- Bootstrap -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img id="sub" class="m-auto" src="https://sdtimes.com/wp-content/uploads/2018/01/bootstrap-stack-490x412.png" title="Bootstrap" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(51,19,99),rgb(71,27,135),rgb(92,40,168),rgb(133,80,210));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Bootstrapping: 8.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Font Awesome -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img id="sub" src="https://pbs.twimg.com/profile_images/1113090077511618560/JqER8seZ.png" title="Font Awesome" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 95%; background-color: rgb(49,141,222);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Font Awesome: 9.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Javascript -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" title="JS" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-dark" role="progressbar" style="width: 70%; background-color: rgb(247,224,24);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">JavaScript: 7</div>
-								</div>
-							</div>
-						</div>
-						<!-- jQuery -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img id="sub" src="https://pbs.twimg.com/profile_images/788014136575668224/lxEKmMnB_400x400.jpg" title="jQuery" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar" role="progressbar" style="width: 70%; background-color: rgb(16,104,173);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">jQuery: 7</div>
-								</div>
-							</div>
-						</div>
-						<!-- AJAX -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img id="sub" src="https://kraigpopelka.info/images/theme/icons/ajax.svg" title="AJAX" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar" role="progressbar" style="width: 70%; background-color: rgb(0,140,219);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">AJAX: 7</div>
-								</div>
-							</div>
-						</div>
-						<!-- PHP -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1024px-PHP-logo.svg.png" title="PHP" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 75%; background-image: linear-gradient(-90deg,rgb(70,74,138),rgb(119,124,181));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">PHP: 7.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- MySQL -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://cdn.worldvectorlogo.com/logos/mysql.svg" title="MySQL" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 90%; background-image: linear-gradient(-90deg,rgb(248,152,29),rgb(93,135,161));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">MySQL: 9</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0">
-					<div class="card-header bg-white">
-						<span class="font-weight-bold">Database Administration</span>
-					</div>
-					<div class="card-body text-center">
-						<!-- phpMyAdmin -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="mb-2" src="https://upload.wikimedia.org/wikipedia/commons/4/4f/PhpMyAdmin_logo.svg" title="phpMyAdmin" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(248,152,29),rgb(93,135,161));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">phpMyAdmin: 8.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- MSSQL -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img class="mb-2" src="https://cdn.worldvectorlogo.com/logos/microsoft-sql-server.svg" title="MSSQL" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(179,56,60),rgb(144,156,169));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">MSSQL: 8.5</div>
-								</div>
-							</div>
-						</div>
-						<div class="card-header bg-white text-left">
-							<span class="font-weight-bold">Database Skills</span>
-						</div>
-						<div class="card-body text-left">
-							<ul>
-								<li>Designs ERD with Microsoft Visio.</li>
-								<li><b>Flexible</b>: Knows alternative and exclusive SQL clauses and scalar functions on different DBMS.</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="card-deck">
-				<div class="card border-0">
-					<div class="card-header bg-white">
-						<span class="font-weight-bold">Microsoft Office</span>
-					</div>
-					<div class="card-body">
-						<!-- Word -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/737/Microsoft%20Word-595b40b75ba036ed117d86c1.svg" title="Word" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 90%;  background-color: rgb(13,71,161);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Word: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- Excel -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="m-auto" src="https://visualpharm.com/assets/894/Microsoft%20Excel-595b40b75ba036ed117d86b9.svg" title="Excel" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 90%; background-color: rgb(46,125,50);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Excel: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- PowerPoint -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="m-auto" src="https://visualpharm.com/assets/423/Microsoft%20Powerpoint-595b40b75ba036ed117d86bd.svg" title="PowerPoint" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 90%;   background-color: rgb(230,74,25);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">PowerPoint: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- Publisher -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/906/Microsoft%20Publisher-595b40b75ba036ed117d86bf.svg" title="Publisher" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 75%; background-color: rgb(0,137,123);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Publisher: 7.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Outlook -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img class="" src="https://visualpharm.com/assets/840/Microsoft%20Outlook-595b40b75ba036ed117d86bc.svg" title="Outlook" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 80%; background-color: rgb(2,119,189);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Outlook: 8</div>
-								</div>
-							</div>
-						</div>
-						<!-- OneNote -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/878/Microsoft%20Onenote-595b40b75ba036ed117d86bb.svg" title="OneNote" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar" role="progressbar" style="width: 90%; background-color: rgb(123,31,162);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">OneNote: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- Visio -->
-						<div class="d-flex align-items-center text-center  mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/754/Microsoft%20Visio-595b40b75ba036ed117d864f.svg" title="Visio" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px;">
-									<div class="progress-bar" role="progressbar" style="width: 90%; background-color: rgb(57,73,171);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Visio: 9</div>
-								</div>
-							</div>
-						</div>
-						<!-- Access -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/952/Microsoft%20Access-595b40b75ba036ed117d86b7.svg" title="Access" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 50%; background-color: rgb(197,17,98);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Access: 5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Project -->
-						<div class="d-flex align-items-center text-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://visualpharm.com/assets/4/Microsoft%20Project-595b40b75ba036ed117d86be.svg" title="Project" /> -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 50%; background-color: rgb(67,160,71);" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Project: 5</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0">
-					<div class="card-header bg-white">
-						<span class="font-weight-bold">Adobe Creative Suite</span>
-					</div>
-					<div class="card-body text-center">
-						<!-- Photoshop -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col col-4"> -->
-								<!-- <img src="https://www.adobe.com/content/dam/cc/us/en/products/ccoverview/ps_cc_app_RGB.svg" title="Photoshop" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 70%; background-image: linear-gradient(-90deg,rgb(3,169,244),rgb(2,15,22));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Photoshop: 7</div>
-								</div>
-							</div>
-						</div>
-						<!-- Animate (Flash) -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img src="https://www.adobe.com/content/dam/cc/icons/animate.svg" title="Animate (Flash)" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 85%; background-image: linear-gradient(-90deg,rgb(244,67,44),rgb(33,4,3));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Animate (Flash): 8</div>
-								</div>
-							</div>
-						</div>
-						<!-- Dreamweaver -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img src="https://helpx.adobe.com/content/dam/help/mnemonics/dw_cc_app_RGB.svg" title="Dreamweaver" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 50%; background-image: linear-gradient(-90deg,rgb(53,250,0),rgb(7,38,0));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Dreamweaver: 5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Premiere Pro -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img src="https://helpx.adobe.com/content/dam/help/mnemonics/pr_cc_app_RGB.svg" title="Flash" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 65%; background-image: linear-gradient(-90deg,rgb(234,119,255),rgb(42,0,52));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Premiere Pro: 6.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- After Effects -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img src="https://helpx.adobe.com/content/dam/help/mnemonics/ae_cc_app_RGB.svg" title="After Effects" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 55%; background-image: linear-gradient(-90deg,rgb(210,145,255),rgb(31,0,64));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">After Effects: 5.5</div>
-								</div>
-							</div>
-						</div>
-						<!-- Bridge -->
-						<div class="d-flex align-items-center mb-2">
-							<!-- <div class="col-4"> -->
-								<!-- <img src="https://www.adobe.com/content/dam/cc/icons/bridge.svg" title="Bridge" />		 -->
-							<!-- </div> -->
-							<div class="col">
-								<div class="progress" style="height: 25px">
-									<div class="progress-bar text-white" role="progressbar" style="width: 45%; background-image: linear-gradient(-90deg,rgb(212,175,23),rgb(64,42,20));" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Bridge: 4.5</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Works -->
-		<div id="works" class="container py-3">
-			<h3 class="text-uppercase font-weight-bold text-center my-3">Works</h3>
-		</div>
-		<div class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item">
-					<img src="assets/img/1.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item active">
-					<img src="assets/img/3.jpg" class="d-block w-100" alt="...">
-				</div>
-				<div class="d-md-block overlay overlayWorks">
-				</div>
-				<div class="carousel-caption pb-0">
-					<img id="work1a" src="assets/img/logo-w-x.png" />
-				</div>
-			</div>
-		</div>
-		<!-- Works: Content -->
-		<div class="container py-4">
-			<div class="row">
-				<div class="col d-flex flex-column align-items-center justify-content-center">
-					<img id="work1b" src="assets/img/logo-a1.png" />
-				</div>
-				<div id="divider" class="border"></div>
-				<div id="content" class="col p-4">
-					<h3 class="font-weight-bold">ReFeel</h3>
-					<h5 class="">Blood Bank Monitoring and Inventory System</h5>
-					<h6 class="">INTE 3043: Systems Analysis and Design</h6>
-					<h6 class="">INTE 4213: Capstone Project</h6>
-					<p class="text-left">
-						The Blood Bank Monitoring and Inventory System is capable of handling all the records of donors and easily view them for future reference which would help the user to make sure that they receive the highest quality of blood possible. It is also capable of monitoring the quality and quantity of blood bags in the storage to help them know the current status of their storage. The system fulfills its purpose to help maintain and easily record then view the records of the donors and maintain the blood inventory.
-					</p>
-					<div class="col d-flex align-items-top mb-2">
-						<div class="col d-flex align-items-top mb-2">
-							<i class="fa fa-2x fa-medal mr-3"></i>
-							<div class="d-flex-column">
-								<h5>4<sup>th</sup> Place</h5>
-								Capstone Project Top 12 Best Systems Ranking Defense
-							</div>
-						</div>
-						<div class="col d-flex align-items-top mb-3">
-							<i class="fa fa-2x fa-medal mr-3"></i>
-							<div class="d-flex-column">
-								<h5>Finalist</h5>
-								2019 Best Undergraduate Research for Science and Technology
-							</div>
-						</div>
-					</div>
-					<!-- <div class="d-flex align-items-center"> -->
-						<!-- <i class="fab fa-2x fa-github mr-3"></i> -->
-						<!-- <a href="https://github.com/krakenhead/ReFeel">https://github.com/krakenhead/ReFeel</a> -->
-					<!-- </div> -->
-				</div>
-			</div>
-		</div>
-		<div class="footer bg-success text-white p-4 text-center">
-			<img class="bg-success mr-4" src="assets/img/icon-ss.png" />
-			<!-- <div class="d-flex m-auto justify-content-center border col-6"> -->
-				<!-- <i class="fab fa-2x fa-github"></i> -->
-				<!-- <i class="fas fa-2x fa-at"></i> -->
-				<!-- <i class="fab fa-2x fa-linkedin"></i> -->
-			<!-- </div> -->
-		</div>
+		<!--Content ends-->
 	</body>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+	<!-- Development version -->
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+
+	<!-- Production version -->
+	<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<script type="text/javascript">
+		const hover = document.querySelectorAll('.hover');
+		const tooltip = document.querySelectorAll('.tooltip');
+
+		const popperInstance = Popper.createPopper(hover, tooltip, {
+			modifiers: [
+				{
+					name: 'offset',
+					options: {
+						offset: [0, 8],
+					},
+				},
+			],
+		});
+
+		function show() {
+			tooltip.setAttribute('data-show', '');
+
+			// We need to tell Popper to update the tooltip position
+			// after we show the tooltip, otherwise it will be incorrect
+			popperInstance.update();
+		}
+
+		function hide() {
+			tooltip.removeAttribute('data-show');
+		}
+
+		const showEvents = ['mouseenter', 'focus'];
+		const hideEvents = ['mouseleave', 'blur'];
+
+		showEvents.forEach((event) => {
+			button.addEventListener(event, show);
+		});
+
+		hideEvents.forEach((event) => {
+			button.addEventListener(event, hide);
+		});
+	</script>
 </html>
