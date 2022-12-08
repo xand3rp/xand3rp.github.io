@@ -1,7 +1,7 @@
 # to ignore folders
 etc/
-assets/etc/
-Nova/etc/
-Nova/assets/etc/
-Transient/etc/
-Transient/assets/etc/
+# assets/etc/
+# Nova/etc/
+# Nova/assets/etc/
+# Transient/etc/
+# Transient/assets/etc/

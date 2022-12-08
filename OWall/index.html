@@ -1,534 +1,538 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Mockup Design 1</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <!-- <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png"> -->
+    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
-    <meta property="og:title" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:site_name" content="">
-    <meta property="og:description" content="">
+    <link href="assets/css/gaia.css" rel="stylesheet"/>
+    
+    <link href="assets/css/font.css" rel="stylesheet"/>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'> -->
 
-    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
+    
+    <!-- Pannellum -->
+    <link href="assets/plugins/pannellum/pannellum.css" rel="stylesheet">
 
-    <!-- Favicons -->
-    <link href="assets/img/icon.ico" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="theme-color" content="#988068" />
+    
+    <title>Ö.Wall</title>
   </head>
 
   <body>
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <div class="hero-container">
-        <div data-aos="fade-in">
-          <div class="hero-logo">
-            <!-- <img class="" src="assets/img/logo.png" alt="Imperial"> -->
-          </div>
-
-          <h1>ÖWall</h1>
-          <h2>Welcome to the <span class="typed" data-typed-items="future in creating your space/homes; future of dynamic homes; Öne-Stop space of all your interior design, building, and renovation"></span></h2>
-          <div class="actions">
-            <!-- <a href="#about" class="btn-get-started">Get Started</a>
-            <a href="#services" class="btn-services">Button 1</a> -->
-          </div>
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+      <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+      <div class="container">
+        <div class="navbar-header">
+          <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar bar1"></span>
+            <span class="icon-bar bar2"></span>
+            <span class="icon-bar bar3"></span>
+          </button>
+          <a href="#" class="navbar-brand">
+            Ö.WALL
+          </a>
         </div>
-      </div>
-    </section><!-- End Hero -->
-
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-      <div class="container d-flex align-items-center justify-content-between">
-
-        <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
-        <!-- Uncomment below if you prefer to use a text logo -->
-        <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
-
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-            <!-- <li><a class="nav-link scrollto" href="#about">About</a></li> -->
-            <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
-            <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-            <!-- <li><a class="nav-link scrollto" href="#testimonials">Testimonials</a></li> -->
-            <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
-            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="#">Drop Down 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
-                    <li><a href="#">Deep Drop Down 2</a></li>
-                    <li><a href="#">Deep Drop Down 3</a></li>
-                    <li><a href="#">Deep Drop Down 4</a></li>
-                    <li><a href="#">Deep Drop Down 5</a></li>
-                  </ul>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right navbar-uppercase">
+            <!-- <li>
+              <a href="http://www.creative-tim.com/product/gaia-bootstrap-template-pro" target="_blank">Get PRO Version</a>
+            </li>
+            <li class="dropdown">
+              <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-share-alt"></i> Share
+              </a>
+              <ul class="dropdown-menu dropdown-danger">
+                <li>
+                  <a href="#"><i class="fa fa-facebook-square"></i> Facebook</a>
                 </li>
-                <li><a href="#">Drop Down 2</a></li>
-                <li><a href="#">Drop Down 3</a></li>
-                <li><a href="#">Drop Down 4</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
+                </li>
               </ul>
+            </li>
+            <li>
+              <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" class="btn btn-danger btn-fill">Free Download</a>
             </li> -->
-            <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
-
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-    </header><!-- End Header -->
+    </nav>
 
-    <main id="main">
-
-      <!-- ======= About Section ======= -->
-      <section id="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">About Us</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">This section is designated for who and what your company are.</p>
-            </div>
-          </div>
+    <div class="section section-header">
+      <div class="parallax filter filter-theme">
+        <div class="image"
+          style="background-image: url('assets/img/header-1.jpg')">
         </div>
-        <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="row">
-
-            <div class="col-lg-6 about-img">
-              <img src="assets/img/about-img.jpg" alt="">
-            </div>
-
-            <div class="col-md-6 about-content">
-              <h2 class="about-title">Lorem ipsum dolor sit amet.</h2>
-              <p class="about-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate
-              </p>
-              <p class="about-text">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id est laborum
-              </p>
-              <p class="about-text">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section><!-- End About Section -->
-
-      <!-- ======= Services Section ======= -->
-      <section id="services">
         <div class="container">
-          <div class="row" data-aos="fade-up">
-            <div class="col-md-12">
-              <h3 class="section-title">Our Services</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">This section is for showcasing the goods and/or services of your company.</p>
-            </div>
-          </div>
-
-          <div class="row" data-aos="fade-up" data-aos-delay="200">
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="service-title"><a href="">Lorem Ipsum</a></h4>
-              <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="service-title"><a href="">Dolor Sitema</a></h4>
-              <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-            </div>
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
-              <h4 class="service-title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="service-title"><a href="">Magni Dolores</a></h4>
-              <p class="service-description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
-              <h4 class="service-title"><a href="">Nemo Enim</a></h4>
-              <p class="service-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-            <div class="col-lg-4 col-md-6 service-item">
-              <div class="service-icon"><i class="bi bi-calendar4-week"></i></div>
-              <h4 class="service-title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="service-description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div>
-        </div>
-      </section><!-- End Services Section -->
-
-      <!-- ======= Subscrbe Section ======= -->
-      <section id="subscribe">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-8">
-              <h3 class="subscribe-title">Subscribe For Updates</h3>
-              <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
-            </div>
-            <div class="col-md-4 subscribe-btn-container">
-              <a class="subscribe-btn" href="#">Subscribe Now</a>
-            </div>
-          </div>
-        </div>
-      </section><!-- End Subscrbe Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Portfolio</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Category 1</li>
-                <li data-filter=".filter-card">Category 2</li>
-                <li data-filter=".filter-web">Category 3</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
+          <div class="content">
+            <div class="title-area">
+              <!-- <p>Free Demo</p> -->
+              <h1 class="title-modern"></h1>
+              <h3>Öne-Stop space for all your interior design, building, and renovation.</h3>
+              <div class="separator line-separator">Ö</div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bi bi-plus"></i></a>
-                <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bi bi-link"></i></a>
-              </div>
-            </div>
-
+            <!-- <div class="button-get-started">
+              <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" target="_blank" class="btn btn-white btn-fill btn-lg ">
+                Download Demo
+              </a>
+            </div> -->
           </div>
 
         </div>
-      </section><!-- End Portfolio Section -->
+      </div>
+    </div>
 
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Testimonials</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic mx-auto">
-                  <img src="assets/img/client-1.jpg" alt="">
-                </div>
-                <h4>Rhea Wexler</h4>
-                <span>Lawless Inc</span>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="assets/img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="assets/img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-9">
-              <div class="quote">
-                <b><img src="assets/img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="assets/img/quote_sign_right.png" alt=""></small>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="profile">
-                <div class="pic mx-auto"><img src="assets/img/client-2.jpg" alt=""></div>
-                <h4>Walter Cranston</h4>
-                <span>Odeo Inc</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section><!-- End Testimonials Section -->
-
-      <!-- ======= Team Section ======= -->
-      <section id="team">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Our Team</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3">
-              <div class="member">
-                <div class="pic"><img src="assets/img/team/team-1.jpg" alt=""></div>
-                <h4>Lisa Buffay</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="member">
-                <div class="pic"><img src="assets/img/team/team-2.jpg" alt=""></div>
-                <h4>Jim Cooper</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="member">
-                <div class="pic"><img src="assets/img/team/team-3.jpg" alt=""></div>
-                <h4>Stephanie Diaz</h4>
-                <span>Chief Technology Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="member">
-                <div class="pic"><img src="assets/img/team/team-4.jpg" alt=""></div>
-                <h4>Saul McGill</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section><!-- End Team Section -->
-
-      <!-- ======= Contact Section ======= -->
-      <section id="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="section-title">Contact Us</h3>
-              <div class="section-title-divider"></div>
-              <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-4">
-              <div class="info">
-                <div>
-                  <i class="bi bi-geo-alt"></i>
-                  <p class="p">
-                    308 Negra Arroyo Lane
-                    Albuquerque, NE 87104
-                  </p>
-                </div>
-
-                <div>
-                  <i class="bi bi-envelope"></i>
-                  <p>charlotte@owall.com</p>
-                </div>
-
-                <div>
-                  <i class="bi bi-phone"></i>
-                  <p>+63 123 456 7890</p>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-5 col-md-8">
-              <div class="form">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
-                  </div>
-                  <div class="form-group mt-3">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail Address" required>
-                  </div>
-                  <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                  </div>
-                  <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                  </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-                  <div class="text-center"><button type="submit">Send Message</button></div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section><!-- End Contact Section -->
-
-    </main><!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
+    <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <!-- <div class="copyright">
-              &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
-            </div> -->
-            <div class="credits">
-              <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+          <div class="title-area">
+            <h2>Our Services</h2>
+            <div class="separator separator-danger">Ö</div>
+            <p class="description">We promise you a new look and more importantly, a new attitude. We build that by getting to know you, your needs and creating the best looking homes.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info-icon">
+              <div class="icon text-danger">
+                <i class="pe-7s-graph1"></i>
+              </div>
+              <h3>Sales</h3>
+              <p class="description">We make our design perfect for you. Our adjustment turn our homes into your homes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-icon">
+              <div class="icon text-danger">
+                <i class="pe-7s-note2"></i>
+              </div>
+              <h3>Content</h3>
+              <p class="description">We create a persona regarding the multiple wardrobe accessories that we provide..</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-icon">
+              <div class="icon text-danger">
+                <i class="pe-7s-music"></i>
+              </div>
+              <h3>Music</h3>
+              <p class="description">We like to present the world with our work, so we make sure we spread the word regarding our homes.</p>
             </div>
           </div>
         </div>
       </div>
-    </footer><!-- End Footer -->
+    </div>
 
-    <div id="preloader"></div>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="title-area">
+            <h2>Virtualize</h2>
+            <div class="separator separator-danger">Ö</div>
+            <p class="description">We promise you a new look and more importantly, a new attitude. We build that by getting to know you, your needs and creating the best looking homes.</p>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div id="panorama" style="height: 30vh;"></div>
+        </div>
+      </div>
+    </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/typed.js/typed.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <div class="section section-our-team-freebie">
+      <div class="parallax filter filter-color-black">
+        <div class="image" style="background-image:url('assets/img/header-2.jpg')">
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="row">
+              <div class="title-area">
+                <h2>Who We Are</h2>
+                <div class="separator separator-danger">Ö</div>
+                <!-- <p class="description">We promise you a new look and more importantly, a new attitude. We build that by getting to know you, your needs and creating the best looking homes.</p> -->
+              </div>
+            </div>
+
+            <div class="team">
+              <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card card-member">
+                        <div class="content">
+                          <div class="avatar avatar-danger">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_1.jpg"/>
+                          </div>
+                          <div class="description">
+                            <h3 class="title">Kim</h3>
+                            <p class="small-text">CEO / Co-Founder</p>
+                            <p class="description">
+                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card card-member">
+                        <div class="content">
+                          <div class="avatar avatar-danger">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_4.jpg"/>
+                          </div>
+                          <div class="description">
+                            <h3 class="title">Pheebs</h3>
+                            <p class="small-text">Product Designer</p>
+                            <p class="description">
+                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card card-member">
+                        <div class="content">
+                          <div class="avatar avatar-danger">
+                            <img alt="..." class="img-circle" src="assets/img/faces/face_3.jpg"/>
+                          </div>
+                          <div class="description">
+                            <h3 class="title">Walt</h3>
+                            <p class="small-text">Marketing Hacker</p>
+                            <p class="description">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-our-clients-freebie">
+      <div class="container">
+        <div class="title-area">
+          <h5 class="subtitle text-gray">Here are some</h5>
+          <h2>Clients Testimonials</h2>
+          <div class="separator separator-danger">Ö</div>
+        </div>
+
+        <ul class="nav nav-text" role="tablist">
+          <li class="active">
+            <a href="#testimonial1" role="tab" data-toggle="tab">
+              <div class="image-clients">
+                <img alt="..." class="img-circle" src="assets/img/faces/face_5.jpg"/>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonial2" role="tab" data-toggle="tab">
+              <div class="image-clients">
+                <img alt="..." class="img-circle" src="assets/img/faces/face_6.jpg"/>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#testimonial3" role="tab" data-toggle="tab">
+              <div class="image-clients">
+                <img alt="..." class="img-circle" src="assets/img/faces/face_2.jpg"/>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="testimonial1">
+            <p class="description">
+              And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color... Green I even had the pink walls I thought I was Kanye I promise I will never let the people down. I want a better life for all!
+            </p>
+          </div>
+          <div class="tab-pane" id="testimonial2">
+            <p class="description">Green I even had the pink walls I thought I was Kanye I promise I will never let the people down. I want a better life for all! And I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. Now there is only one important color...
+            </p>
+          </div>
+          <div class="tab-pane" id="testimonial3">
+            <p class="description"> I used a period because contrary to popular belief I strongly dislike exclamation points! We no longer have to be scared of the truth feels good to be home In Roman times the artist would contemplate proportions and colors. The 'Gaia' team did a great work while we were collaborating. They provided a vision that was in deep connection with our needs and helped us achieve our goals.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="section section-small section-get-started">
+      <div class="parallax filter">
+        <div class="image"
+          style="background-image: url('assets/img/office-1.jpg')">
+        </div>
+        <div class="container">
+          <div class="title-area">
+            <h2 class="text-white">Do you want to work with us?</h2>
+            <div class="separator line-separator">Ö</div>
+            <p class="description"> We are keen on creating a second skin for anyone with a sense of style! We design our homes having our customers in mind and we never disappoint!</p>
+          </div>
+
+          <div class="button-get-started">
+            <button class="btn btn-danger btn-fill btn-lg  btn_cus" data-toggle="modal" data-target="#mdl_cus">Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer footer-big footer-color-black" data-color="black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-3">
+            <div class="info">
+              <h5 class="title">Company</h5>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Home</a></li>
+                  <li>
+                    <a href="#">Find offers</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover Projects</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-3 col-md-offset-1 col-sm-3">
+            <div class="info">
+              <h5 class="title">Help and Support</h5>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">How it works</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms &amp; Conditions</a>
+                  </li>
+                  <li>
+                    <a href="#">Company Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Money Back</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="info">
+              <h5 class="title">Latest News</h5>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                      <b>Get Shit Done</b>
+                      The best kit in the market is here, just give it a try and let us...
+                      <hr class="hr-small">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter"></i>
+                      We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1 col-sm-3">
+            <div class="info">
+              <h5 class="title">Follow us on</h5>
+              <nav>
+                <ul>
+                  <li>
+                    <a href="#" class="btn btn-social btn-facebook btn-simple">
+                      <i class="fa fa-facebook-square"></i> Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
+                      <i class="fa fa-dribbble"></i> Dribbble
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-social btn-twitter btn-simple">
+                      <i class="fa fa-twitter"></i> Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn btn-social btn-reddit btn-simple">
+                      <i class="fa fa-google-plus-square"></i> Google+
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="copyright">
+          © <script> document.write(new Date().getFullYear()) </script> - xp
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal - Contact Us -->
+    <div class="modal fade" id="mdl_cus" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col">
+                <label for="">Given Name</label>
+                <input type="text" name="gvn" class="form-control" />
+              </div>
+              <div class="col">
+                <label for="">Last Name</label>
+                <input type="text" name="lst" class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="">Work E-mail</label>
+              <input type="email" name="ema" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="">Message</label>
+              <textarea class="form-control" name="msg" id="" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script type="text/javascript" src="assets/js/jquery-3.6.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="assets/js/gaia.js"></script>
+
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript"  src="assets/plugins/pannellum/pannellum.js"></script>
+
+  <script>
+    // Pannellum
+    viewer = pannellum.viewer('panorama', {
+        "default": {
+            "author": "xp",
+            "firstScene": "equirectangular",
+            "autoLoad": true
+        },
+        
+        "scenes": {
+            "cube": {
+                "title": "cube title",
+                "type": "cubemap",
+                "cubeMap": [
+                    "../examples/multires/1/f00.png",
+                    "../examples/multires/1/r00.png",
+                    "../examples/multires/1/b00.png",
+                    "../examples/multires/1/l00.png",
+                    "../examples/multires/1/u00.png",
+                    "../examples/multires/1/d00.png"
+                ],
+                "hotSpots": [
+                    {
+                        "pitch": -12,
+                        "yaw": 170,
+                        "type": "info",
+                        "text": "info test"
+                    },
+                    {
+                        "pitch": -10,
+                        "yaw": -50,
+                        "type": "info",
+                        "text": "link test",
+                        "URL": "https://github.com/mpetroff/pannellum"
+                    },
+                    {
+                        "pitch": 0,
+                        "yaw": -10,
+                        "type": "scene",
+                        "text": "scene test",
+                        "sceneId": "multires"
+                    }
+                ]
+            },
+    
+            "equirectangular": {
+                "title": "Interior Designing",
+                "panorama": "assets/plugins/pannellum/examples/examplepano.jpg"
+            },
+    
+            "multires": {
+                "title": "multires title",
+                "type": "multires",
+                "hfov": 85,
+                "multiRes": {
+                    "basePath": "../examples/multires",
+                    "path": "/%l/%s%x%y",
+                    "fallbackPath": "/fallback/%s",
+                    "extension": "png",
+                    "tileResolution": 256,
+                    "maxLevel": 4,
+                    "cubeResolution": 2048
+                }
+            }
+        }
+    });
+
+    // jQuery
+    $("#mdl_cus").modal("show");
+
+    $("input, textarea").each(function()  {
+      console.log($(this).attr("name"));
+    });
+  </script>
 </html>
