@@ -1,5 +1,6 @@
 # to ignore folders
 etc/
+temp/
 # assets/etc/
 # Nova/etc/
 # Nova/assets/etc/

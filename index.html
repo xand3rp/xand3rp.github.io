@@ -4,142 +4,178 @@
 		<link rel="icon" href="assets/icon-ss.ico">
 
 		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 		
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-		<!-- Popper.js - Custom CSS -->
-		<link rel="stylesheet" href="popper.css">
+		<!-- Glider.js -->
+		<link rel="stylesheet" type="text/css" href="assets/plugins/glider/glider.min.css">
+
+		<!-- Popper.js -->
+		<link rel="stylesheet" type="text/css" href="assets/plugins/popper/popper.css">
 
 		<!-- Wave Animation -->
-		<link rel="stylesheet" href="waves.css">
+		<link rel="stylesheet" type="text/css" href="assets/plugins/waves/waves.css">
 
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
 
-		<meta name="author" content="Xander Pijan">
-		<meta name="description" content="Xander Pijan's Portfolio">
+		<meta name="author" content="xp">
+		<meta name="description" content="all-about-xp">
+
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#28a745" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
+		
 		<title>xp.io</title>
-
-		<style>
-			#tooltip {
-				background: #333;
-				color: white;
-				font-weight: bold;
-				padding: 4px 8px;
-				font-size: 13px;
-				border-radius: 4px;
-			}
-		</style>
 	</head>
 	<body>
-		<!--Hey! This is the original version
-		of Simple CSS Waves-->
 		<div class="header">
-			<!--Content before waves-->
-			<div class="inner-header flex">
-				<!-- <h1>Xander Pijan</h1> -->
-				<img src="assets/img/icon-ss.png" alt="">
+			<div class="inner-header d-flex align-items-center justify-content-center">
+				<div id="div_intro" class="d-flex align-items-center justify-content-center">
+					<div class="text-center">
+						<img class="my-2" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px; border-radius: 75px;" />
+						<h3 id="hdr_dev">Xander Pijan</h3>
+
+						<!-- <p>
+							I am <span class="font-weight-bold typed" data-typed-items="
+								an IT specialist;
+								a web developer;
+								a database administrator;
+								an Office specialist;
+								a Google specialist;
+								a CRM specialist;
+								a troubleshooter;
+								a livestreamer;
+						"></span>
+						</p> -->
+
+						<div id="div_rol" class="d-flex align-content-between">
+							<a class="btn btn-sm text-white" title="IT Specialist" href="#">
+								<i class="fa fa-2x fa-user-tie"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Web Developer" href="#">
+								<i class="fa fa-2x fa-code"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Database Administrator" href="#">
+								<i class="fa fa-2x fa-database"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Microsoft Office Specialist" href="#">
+								<i class="fab fa-2x fa-microsoft"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Google Apps Specialist" href="#">
+								<i class="fab fa-2x fa-google"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="CRM Specialist" href="#">
+								<i class="fa fa-2x fa-user-cog"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Troubleshooter" href="#">
+								<i class="fa fa-2x fa-tools"></i>
+							</a>
+							<a class="btn btn-sm text-white" title="Livestreamer" href="#">
+								<i class="fa fa-2x fa-broadcast-tower"></i>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			
-			<!--Waves Container-->
+			<!-- waves -->
 			<div>
 				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-				<defs>
-				<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-				</defs>
-				<g class="parallax">
-				<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
-				<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-				<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-				<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-				</g>
+					<defs>
+						<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+					</defs>
+					<g class="parallax">
+						<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+						<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+						<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+						<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+					</g>
 				</svg>
 			</div>
-			<!--Waves end-->
 		</div>
-		<!--Header ends-->
 
-		<!-- Content starts -->
-		<div class="container-fluid text-center mt-2">
-		<!-- <div class="content flex justify-content-center"> -->
-			<!-- <i class="fa fa-laptop-code fa-3x mx-4"></i> -->
-			<div class="row justify-content-center">
-				<div>
-					<img class="m-2" style="height: 150px;" src="assets/portfolio/portal.png" alt="">
-					<!-- <img style="height: 150px;" src="assets/portfolio/HEALS.png" alt="">
-					<img style="height: 150px;" src="assets/portfolio/BEAMS.png" alt=""> -->
-					<p>Government Agency Portal</p>
-				</div>
-				<div>
-					<a href="Regal/">
-						<img class="img-fluid m-2" style="height: 150px;" src="assets/portfolio/mockup-1.png" alt="">
-					</a>
-					<p>Mockup Design 1: Regal</p>
-				</div>
-				<div>
-					<a href="Transient/">
-						<img class="m-2" style="height: 150px;" src="assets/portfolio/mockup-2.png" alt="">
-					</a>
-					<p>Mockup Design 2: Transient</p>
-				</div>
-			</div>
+		<div id="div_content" class="content container mt-2">
+			<span class="h2" id="typed"></span>
 		</div>
 		<!--Content ends-->
 	</body>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Bootstrap Bundle (BS, jQuery, Popper) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-	<!-- Development version -->
-	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+	<!-- jQuery -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+	<!-- Popper.js -->
+	<!-- Development version -->
+	<!-- <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 	<!-- Production version -->
 	<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 
-	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-	<script type="text/javascript" src="script.js"></script>
+	<!-- <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> -->
 
+	<!-- Glider.js -->
+	<script type="text/javascript" src="assets/plugins/glider/glider.min.js"></script>
+
+	<!-- Typed.js -->
+	<script type="text/javascript" src="assets/plugins/typed/typed.min.js"></script>
+
+	<!-- Override scripts -->
+	<script type="text/javascript" src="assets/script.js"></script>
+
+	<!-- Page scripts -->
 	<script type="text/javascript">
-		const hover = document.querySelectorAll('.hover');
-		const tooltip = document.querySelectorAll('.tooltip');
+		// Intro Anim
+		setTimeout(function()	{
+			$(".inner-header").animate({"height": "30vh"})
+			$(".content").animate({"height": "60vh"})
+		}, 3000)
 
-		const popperInstance = Popper.createPopper(hover, tooltip, {
-			modifiers: [
-				{
-					name: 'offset',
-					options: {
-						offset: [0, 8],
-					},
-				},
-			],
+		// Profile Content
+		fetch('assets/data.json')
+    .then((res) => res.json())
+    .then((obj) => {
+			let data = obj;
+			// All technology tools
+			Object.entries(data["tech"]).forEach(([tool, img]) => {  
+				$("#row_tls").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
+			})
 		});
 
-		function show() {
-			tooltip.setAttribute('data-show', '');
+		// GET param
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = window.location.search.substring(1),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
 
-			// We need to tell Popper to update the tooltip position
-			// after we show the tooltip, otherwise it will be incorrect
-			popperInstance.update();
-		}
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
 
-		function hide() {
-			tooltip.removeAttribute('data-show');
-		}
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+				}
+			}
 
-		const showEvents = ['mouseenter', 'focus'];
-		const hideEvents = ['mouseleave', 'blur'];
+			return false;
+		};
 
-		showEvents.forEach((event) => {
-			button.addEventListener(event, show);
-		});
+		// Content Application
+		let get_data = getUrlParameter("role") || "IT Specialist";
 
-		hideEvents.forEach((event) => {
-			button.addEventListener(event, hide);
-		});
+		console.log(get_data);
+
+		typed_js([get_data]);
 	</script>
 </html>

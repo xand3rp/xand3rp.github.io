@@ -1,0 +1,69 @@
+{
+  "tech": {
+    "HTML5": "https://rapidapi.com/blog/wp-content/uploads/2018/06/logo-2582748_640.png",
+    "CSS": "https://www.joykal.com/wp-content/uploads/2019/09/css3.png",
+    "Bootstrap": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png",
+    "JS": "http://developerpitstop.com/wp-content/uploads/2022/01/Javascript_Logo.png",
+    "PHP": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png",
+    "jQuery": "https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png",
+    "AJAX": "https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2015/07/difference-between-ajax-and-jQuery-Ajax.png?resize=500%2C240&ssl=1",
+    "SQL": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+    "MySQL": "https://styles.redditmedia.com/t5_2qm6k/styles/communityIcon_dhjr6guc03x51.png",
+    "phpMyAdmin": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/PhpMyAdmin_logo.svg/2560px-PhpMyAdmin_logo.svg.png",
+    "XAMPP": "https://undsgn.com/wp-content/uploads/2018/03/XAMPP-3.jpg",
+
+
+    "Microsoft Word": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png",
+    "Microsoft Excel": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png",
+    "Microsoft PowerPoint": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/120px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png",
+    "Microsoft Publisher": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Microsoft_Office_Publisher_%282019-present%29.svg/1200px-Microsoft_Office_Publisher_%282019-present%29.svg.png",
+    "Microsoft Outlook": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png",
+    "Microsoft OneDrive": "https://play-lh.googleusercontent.com/6AWr-qrhGT0ohjw0koq3bM8GHEFg1gTurald4FjCDg2RulTp4y_VVsYWUtw7Fo6lsQo",
+
+    "Adobe Photoshop": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
+    "Adobe InDesign": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/800px-Adobe_InDesign_CC_icon.svg.png",
+    "Adobe Acrobat": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adobe_Acrobat_DC_logo_2020.svg/800px-Adobe_Acrobat_DC_logo_2020.svg.png",
+
+
+    "GMail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1100x1100.png",
+    "GDocs": "https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ",
+    "GSheets": "https://play-lh.googleusercontent.com/keE2gN0Hqh8-Tsf_RYZ_-yS2uo6ToqYVyRBv_UZaLXsgeeHBd2YPcEUWEF4DEtfGyb1h",
+    "GSlides": "https://play-lh.googleusercontent.com/DG-zbXPr8LItYD8F2nD4aR_SK_jpkipLBK77YWY-F0cdJt67VFgCHZtRtjsakzTw3EM",
+    "Google Apps Script": "https://g-workplace.com/application/files/3716/0829/6797/google-apps-script_logo-removebg-preview_1.png",
+    "Google Meet": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Meet.max-1100x1100.png",
+
+
+    "Aloware": "https://media.licdn.com/dms/image/C510BAQH-auWu_85ooQ/company-logo_200_200/0/1521612130270?e=2147483647&v=beta&t=T2NcydgtcW-03oqWYPaoWHmSosF_cAh5IKnDcPTmbDY",
+    "ActiveCampaign": "https://www.activecampaign.com/site/assets/activecampaign_logo_default.png",
+    "Zapier": "https://www.clio.com/wp-content/uploads/2017/08/logo_black@2x.png",
+    "Webhooks": "https://images.squarespace-cdn.com/content/v1/5f35637fe609b4316220c424/3cf9c94c-7c29-4a7b-8d98-412733e6b9c5/Individual+Logos-16.jpg",
+
+    
+    "OBS": "https://cdn.akamai.steamstatic.com/steam/apps/1905180/capsule_616x353.jpg?t=1647985460",
+    "Zoom": "https://canvasinfo.unm.edu/external-apps/images/zoom-images/zoom-png-logo-download-transparent-20.png",
+    "Facebook Live": "https://facebookbrand.com/wp-content/uploads/2019/04/FB-Live-Header.png?w=668&h=261"
+  },
+
+  "roles":  {
+    "Web Development":  {
+      "Government Portal":  {
+        "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+      }
+    },
+    "Database Administration":  {
+      "tech": ["SQL", "MySQL", "phpMyAdmin", "XAMPP", "GSheets", "Microsoft Excel"]
+    },
+    "Productivity Tools": {
+      "tech": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Publisher", "Microsoft Outlook", "Microsoft OneDrive", "Adobe Photoshop", "Adobe InDesign", "Adobe Acrobat"]
+    },
+    "Google": {
+      "tech": ["GMail", "GDocs", "GSheets", "GSlides", "GMeet", "Google Apps Script"]
+    },
+    "CRM":  {
+      "tech": ["Aloware", "ActiveCampaign", "Zapier", "Webhooks", "Google Apps Script", "JS"]
+    },
+    "Livestreaming":  {
+      "tech": ["OBS", "Zoom", "GMeet", "Facebook Live"]
+    }
+  }
+}
