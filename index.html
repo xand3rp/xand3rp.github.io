@@ -39,45 +39,7 @@
 						<img class="my-2" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px; border-radius: 75px;" />
 						<h3 id="hdr_dev">Xander Pijan</h3>
 
-						<!-- <p>
-							I am <span class="font-weight-bold typed" data-typed-items="
-								an IT specialist;
-								a web developer;
-								a database administrator;
-								an Office specialist;
-								a Google specialist;
-								a CRM specialist;
-								a troubleshooter;
-								a livestreamer;
-						"></span>
-						</p> -->
-
-						<div id="div_rol" class="d-flex align-content-between">
-							<a class="btn btn-sm text-white" title="IT Specialist" href="#">
-								<i class="fa fa-2x fa-user-tie"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Web Developer" href="#">
-								<i class="fa fa-2x fa-code"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Database Administrator" href="#">
-								<i class="fa fa-2x fa-database"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Microsoft Office Specialist" href="#">
-								<i class="fab fa-2x fa-microsoft"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Google Apps Specialist" href="#">
-								<i class="fab fa-2x fa-google"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="CRM Specialist" href="#">
-								<i class="fa fa-2x fa-user-cog"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Troubleshooter" href="#">
-								<i class="fa fa-2x fa-tools"></i>
-							</a>
-							<a class="btn btn-sm text-white" title="Livestreamer" href="#">
-								<i class="fa fa-2x fa-broadcast-tower"></i>
-							</a>
-						</div>
+						<div id="div_rol" class="d-flex align-items-center"></div>
 					</div>
 				</div>
 			</div>
@@ -136,11 +98,17 @@
 
 	<!-- Page scripts -->
 	<script type="text/javascript">
-		// Intro Anim
-		setTimeout(function()	{
-			$(".inner-header").animate({"height": "30vh"})
-			$(".content").animate({"height": "60vh"})
-		}, 3000)
+		// Constants
+		const obj_roles = {
+			its: ["IT Specialist", "fa fa-user-tie"],
+			web: ["Web Developer", "fa fa-code"],
+			dba: ["Database Administrator", "fa fa-database"],
+			mos: ["Microsoft Office Specialist", "fab fa-microsoft"],
+			ggl: ["Google Apps Specialist", "fab fa-google"],
+			crm: ["CRM Specialist", "fa fa-user-cog"],
+			tro: ["Troubleshooter", "fa fa-tools"],
+			liv: ["Livestreamer", "fa fa-broadcast-tower"]
+		};
 
 		// Profile Content
 		fetch('assets/data.json')
@@ -152,6 +120,10 @@
 				$("#row_tls").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
 			})
 		});
+
+		// Role Belt
+		for (const [key, val] of Object.entries(obj_roles))
+			$("#div_rol").append(`<a id="btn_${key}" class="btn btn-sm" title="${val[0]}" href="#"><i class="${val[1]} fa-2x mb-1"></i></a>`);
 
 		// GET param
 		var getUrlParameter = function getUrlParameter(sParam) {
@@ -171,11 +143,23 @@
 			return false;
 		};
 
-		// Content Application
-		let get_data = getUrlParameter("role") || "IT Specialist";
+		
 
-		console.log(get_data);
+		// Intro Anim
+		setTimeout(function()	{
+			$(".inner-header").animate({"height": "30vh"})
+			$(".content").animate({"height": "60vh"})
+		}, 3000)
 
-		typed_js([get_data]);
+		// Content Anim
+		setTimeout(function()	{
+			let get_data = obj_roles[getUrlParameter("role")][0] || "IT Specialist";
+
+			console.log(get_data);
+
+			typed_js([get_data]);
+
+			$("#div_rol").animate({opacity: 1});
+		}, 3500);
 	</script>
 </html>
