@@ -8,6 +8,16 @@ html {
 }
 
 /* Bootstrap Overrides */
+.div_rol > .row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+/* .div_rol > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
+} */
+
 /* .nav-item a {
 	position: relative;
 	color: #28a745;
@@ -40,13 +50,7 @@ html {
 	transform: scaleX(1);
 } */
 
-#div_rol a.btn	{
-	position: relative;
-	color: white;
-	text-decoration: none;
-}
-
-#div_rol a.btn::before	{
+/* #div_rol a.btn::before	{
   content: "";
   position: absolute;
   display: block;
@@ -61,7 +65,7 @@ html {
 
 #div_rol a.btn:hover::before {
   transform: scaleX(1);
-}
+} */
 
 /* #div_rol a.btn:after {
 	content: '';
@@ -92,8 +96,6 @@ html {
   transform: scaleX(1);
   transform-origin: bottom left;
 } */
-
-
 
 /* x.js css Style Overrides */
 
@@ -139,3 +141,15 @@ html {
 }
 
 /* Custom Styles */
+#div_rol a.btn	{
+	/* position: relative; */
+	color: white;
+	text-decoration: none;
+}
+
+#div_rol a.btn:focus	{
+	/* position: relative; */
+	background-color: white;
+  color: #28a745;
+	/* text-decoration: none; */
+}

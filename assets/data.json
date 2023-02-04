@@ -19,6 +19,7 @@
     "Microsoft Publisher": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Microsoft_Office_Publisher_%282019-present%29.svg/1200px-Microsoft_Office_Publisher_%282019-present%29.svg.png",
     "Microsoft Outlook": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png",
     "Microsoft OneDrive": "https://play-lh.googleusercontent.com/6AWr-qrhGT0ohjw0koq3bM8GHEFg1gTurald4FjCDg2RulTp4y_VVsYWUtw7Fo6lsQo",
+    "Microsoft Visio": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Microsoft_Office_Visio_%282019%29.svg/1200px-Microsoft_Office_Visio_%282019%29.svg.png",
 
     "Adobe Photoshop": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/1200px-Adobe_Photoshop_CC_icon.svg.png",
     "Adobe InDesign": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/800px-Adobe_InDesign_CC_icon.svg.png",
@@ -26,9 +27,9 @@
 
 
     "GMail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gmail.max-1100x1100.png",
-    "GDocs": "https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ",
-    "GSheets": "https://play-lh.googleusercontent.com/keE2gN0Hqh8-Tsf_RYZ_-yS2uo6ToqYVyRBv_UZaLXsgeeHBd2YPcEUWEF4DEtfGyb1h",
-    "GSlides": "https://play-lh.googleusercontent.com/DG-zbXPr8LItYD8F2nD4aR_SK_jpkipLBK77YWY-F0cdJt67VFgCHZtRtjsakzTw3EM",
+    "Google Docs": "https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ",
+    "Google Sheets": "https://play-lh.googleusercontent.com/keE2gN0Hqh8-Tsf_RYZ_-yS2uo6ToqYVyRBv_UZaLXsgeeHBd2YPcEUWEF4DEtfGyb1h",
+    "Google Slides": "https://play-lh.googleusercontent.com/DG-zbXPr8LItYD8F2nD4aR_SK_jpkipLBK77YWY-F0cdJt67VFgCHZtRtjsakzTw3EM",
     "Google Apps Script": "https://g-workplace.com/application/files/3716/0829/6797/google-apps-script_logo-removebg-preview_1.png",
     "Google Meet": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Meet.max-1100x1100.png",
 
@@ -45,19 +46,63 @@
   },
 
   "roles":  {
+    "IT Specialist": {
+      "desc": "I provide services in different Information Technology fields: web development, database administrator, office productivity and CRM tools, and livestreaming."
+    },
+
     "Web Development":  {
-      "Government Portal":  {
-        "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+      "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"],
+
+      "desc": "I am a full-stack developer for four (4) years. I aspired to become one since last year of my high school by experimenting HTML elements in the computer lab.",
+      "proj": {
+        "Government Portal":  {
+          "name": "Government Portal",
+          "desc": "A merged system for the deployed two (2) self-developed government systems with interrelational database for data utilization unification for the joined systems and for future developments.",
+          "type": "Management Information System, Decision Support System, Transaction Processing System",
+          "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+        },
+        "HEALS": {
+          "name": "Health Evaluation, Assessment, and Logs System",
+          "desc": "Compliance for the Philippine Republic Act No. 11469 known as “Bayanihan to Heal as One Act” on March 24, 2020. A system which aids the government employees in the agency to monitor and logs their health status. It also assist the Human Resource (HR) unit to assess the responses from the staff and declare work arrangements of the individual and/or division units.",
+          "type": "Management Information System, Decision Support System",
+          "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+        },
+        "BEAMS": {
+          "name": "Budget Expenditure and Allocation Monitoring System",
+          "desc": "A monitoring system which lets the government staff to encode their projects, cash programs, and obligation/utilization requests. It also designed for the Finance units for surveiling the fund allocation and utilization of the agency.",
+          "type": "Management Information System, Transaction Processing System",
+          "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+        },
+        "ReFeel": {
+          "name": "Blood Bank Monitoring and Inventory System",
+          "desc": "My 2018-2019 Capstone Project. A monitoring system which assess the form responses and physical examination of the donor and screening results of the donated blood. An inventory system which stores the blood bag details and monitors its shelf life in the blood bank.",
+          "type": "Management Information System",
+          "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"]
+        }
       }
     },
     "Database Administration":  {
-      "tech": ["SQL", "MySQL", "phpMyAdmin", "XAMPP", "GSheets", "Microsoft Excel"]
+      "tech": ["SQL", "MySQL", "phpMyAdmin", "XAMPP", "Google Sheets", "Microsoft Excel"],
+
+      "desc": "One of my forte. I oversee data regulating in a system with this role. I am inspired to become one because of my college professor and one of my hobby is to sort things.",
+      "proj": {
+        "System Development": {
+          "name": "System Development",
+          "desc": "Aside from being the back-end part of my full-stack developer role, I am a database administrator which formulates database design that will fit the project needs and interconnected with front-end and back-end codes.",
+          "tech": ["SQL", "MySQL", "phpMyAdmin", "XAMPP", "Microsoft Visio"]
+        },
+        "Lead Management":  {
+          "name": "Lead Management",
+          "desc": "My first landing job as a freelancer. I serve a US-based LLC as a data manager of large rows of leads gathered by the agents. I provide uniquified/filtered lead details to my co-workers.",
+          "tech": ["Google Sheets", "Microsoft Excel"]
+        }
+      }
     },
     "Productivity Tools": {
       "tech": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Publisher", "Microsoft Outlook", "Microsoft OneDrive", "Adobe Photoshop", "Adobe InDesign", "Adobe Acrobat"]
     },
     "Google": {
-      "tech": ["GMail", "GDocs", "GSheets", "GSlides", "GMeet", "Google Apps Script"]
+      "tech": ["GMail", "Google Docs", "Google Sheets", "Google Slides", "Google Meet", "Google Apps Script"]
     },
     "CRM":  {
       "tech": ["Aloware", "ActiveCampaign", "Zapier", "Webhooks", "Google Apps Script", "JS"]

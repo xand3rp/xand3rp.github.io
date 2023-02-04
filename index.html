@@ -34,12 +34,13 @@
 	<body>
 		<div class="header">
 			<div class="inner-header d-flex align-items-center justify-content-center">
-				<div id="div_intro" class="d-flex align-items-center justify-content-center">
-					<div class="text-center">
-						<img class="my-2" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px; border-radius: 75px;" />
-						<h3 id="hdr_dev">Xander Pijan</h3>
+				<div id="div_intro" class="text-center">
+					<img class="my-2 rounded-circle" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px;" />
+					<h3 id="hdr_dev">Xander Pijan</h3>
+					<h5 class="mt-n2">IT Specialist</h5>
 
-						<div id="div_rol" class="d-flex align-items-center"></div>
+					<div id="div_rol" class="container mt-1">
+						<div id="row_rol" class="row"></div>
 					</div>
 				</div>
 			</div>
@@ -100,14 +101,14 @@
 	<script type="text/javascript">
 		// Constants
 		const obj_roles = {
-			its: ["IT Specialist", "fa fa-user-tie"],
+			// its: ["IT Specialist", "fa fa-user-tie"],
 			web: ["Web Developer", "fa fa-code"],
 			dba: ["Database Administrator", "fa fa-database"],
 			mos: ["Microsoft Office Specialist", "fab fa-microsoft"],
 			ggl: ["Google Apps Specialist", "fab fa-google"],
 			crm: ["CRM Specialist", "fa fa-user-cog"],
 			tro: ["Troubleshooter", "fa fa-tools"],
-			liv: ["Livestreamer", "fa fa-broadcast-tower"]
+			// liv: ["Livestreamer", "fa fa-broadcast-tower"]
 		};
 
 		// Profile Content
@@ -117,15 +118,24 @@
 			let data = obj;
 			// All technology tools
 			Object.entries(data["tech"]).forEach(([tool, img]) => {  
-				$("#row_tls").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
+				$("#row_tls .row").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
 			})
 		});
 
 		// Role Belt
 		for (const [key, val] of Object.entries(obj_roles))
-			$("#div_rol").append(`<a id="btn_${key}" class="btn btn-sm" title="${val[0]}" href="#"><i class="${val[1]} fa-2x mb-1"></i></a>`);
+			$("#row_rol").append(`
+				<a id="btn_${key}" class="btn btn-sm rounded-pill" title="${val[0]}" href="#">
+					<div class="d-flex align-items-center">
+						<i class="${val[1]} fa-2x mr-2 my-1"></i>
+						${val[0]}
+					</div>
+				</a>
+			`);
+		
+		$("#row_rol").hide();
 
-		// GET param
+		// Get GET param
 		var getUrlParameter = function getUrlParameter(sParam) {
 			var sPageURL = window.location.search.substring(1),
 				sURLVariables = sPageURL.split('&'),
@@ -135,31 +145,32 @@
 			for (i = 0; i < sURLVariables.length; i++) {
 				sParameterName = sURLVariables[i].split('=');
 
-				if (sParameterName[0] === sParam) {
+				if (sParameterName[0] === sParam)
 					return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-				}
 			}
 
 			return false;
 		};
 
-		
-
 		// Intro Anim
 		setTimeout(function()	{
 			$(".inner-header").animate({"height": "30vh"})
-			$(".content").animate({"height": "60vh"})
+			// $(".content").animate({"height": "60vh"})
+			// $("#div_rol").animate({opacity: 1});
+			$("#row_rol").fadeIn();
 		}, 3000)
 
 		// Content Anim
 		setTimeout(function()	{
-			let get_data = obj_roles[getUrlParameter("role")][0] || "IT Specialist";
+			let get_data = getUrlParameter("role") ? (obj_roles[getUrlParameter("role")][0] || "IT Specialist") : "IT Specialist";
 
 			console.log(get_data);
 
-			typed_js([get_data]);
+			// typed_js([get_data]);
 
-			$("#div_rol").animate({opacity: 1});
+			$("#typed").text(get_data).animate()
+
+			// $("#div_rol").animate({opacity: 1});
 		}, 3500);
 	</script>
 </html>
