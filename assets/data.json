@@ -47,10 +47,10 @@
 
   "roles":  {
     "IT Specialist": {
-      "desc": "I provide services in different Information Technology fields: web development, database administrator, office productivity and CRM tools, and livestreaming."
+      "desc": "Three and a half years providing services in different Information Technology fields: web development, database administrator, office productivity and CRM tool specialist, hardware/software troubleshooting, and livestreaming."
     },
 
-    "Web Development":  {
+    "Web Developer":  {
       "tech": ["HTML5", "CSS", "JS", "PHP", "SQL", "MySQL", "phpMyAdmin", "XAMPP"],
 
       "desc": "I am a full-stack developer for four (4) years. I aspired to become one since last year of my high school by experimenting HTML elements in the computer lab.",
@@ -81,7 +81,7 @@
         }
       }
     },
-    "Database Administration":  {
+    "Database Administrator":  {
       "tech": ["SQL", "MySQL", "phpMyAdmin", "XAMPP", "Google Sheets", "Microsoft Excel"],
 
       "desc": "One of my forte. I oversee data regulating in a system with this role. I am inspired to become one because of my college professor and one of my hobby is to sort things.",
@@ -98,16 +98,20 @@
         }
       }
     },
-    "Productivity Tools": {
-      "tech": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Publisher", "Microsoft Outlook", "Microsoft OneDrive", "Adobe Photoshop", "Adobe InDesign", "Adobe Acrobat"]
+    "Microsoft Office Specialist": {
+      "desc": "I provide troubleshooting, produce outputs, and assistance on utilizing the Microsoft Office Suite tools.",
+      "tech": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft Publisher", "Microsoft Outlook", "Microsoft OneDrive", "Microsoft Visio"]
     },
-    "Google": {
+    "Google Apps Specialist": {
+      "desc": "Portability. I provide troubleshooting, produce outputs, and assistance on utilizing the Google Suite tools.",
       "tech": ["GMail", "Google Docs", "Google Sheets", "Google Slides", "Google Meet", "Google Apps Script"]
     },
-    "CRM":  {
+    "CRM Specialist":  {
+      "desc": "I provide administration of Customer Relationship Management (CRM) systems to oversee the data flow and feature utilizations.",
       "tech": ["Aloware", "ActiveCampaign", "Zapier", "Webhooks", "Google Apps Script", "JS"]
     },
     "Livestreaming":  {
+      "desc": "I can setup a livestream in your virtual events.",
       "tech": ["OBS", "Zoom", "GMeet", "Facebook Live"]
     }
   }
