@@ -33,16 +33,16 @@
 	</head>
 	<body>
 		<div class="header">
-			<div class="inner-header d-flex align-items-center justify-content-center">
-				<div id="div_intro" class="text-center">
-					<img class="my-2 rounded-circle" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px;" />
+			<div class="d-flex align-items-center justify-content-center  inner-header">
+				<div>
+					<img class="my-2 rounded-circle" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="max-height: 100px;" />
 					<h3 id="hdr_dev">Xander Pijan</h3>
 					<h5 class="mt-n2">IT Specialist</h5>
-
-					<div id="div_rol" class="container mt-1">
-						<div id="row_rol" class="row"></div>
-					</div>
 				</div>
+			</div>
+
+			<div class="container">
+				<div id="row_rol" class="d-flex overflow-auto"></div>
 			</div>
 			
 			<!-- waves -->
@@ -62,14 +62,19 @@
 			</div>
 		</div>
 
-		<div class="content container mt-2">
+		<div class="container">
+
 			<span class="h2 font-weight-bold" id="typed" style="color: #00acc1;"></span>
-			
-			<div class="carousel slide" data-interval="false">
-				<div id="div_con" class="carousel-inner">
-				</div>
-			</div>
 		</div>
+
+		<!-- <div class="container mt-2"> -->
+			<div class="container overflow-auto mt-2 pb-4  content">
+				<div id="div_con" class="carousel slide" data-interval="false">
+					<div id="car_con" class="carousel-inner"></div>
+				</div>
+				<!-- <div id="div_con" class="carousel slide" data-ride="carousel"></div> -->
+			</div>
+		<!-- </div> -->
 		<!--Content ends-->
 	</body>
 	<!-- Bootstrap Bundle (BS, jQuery, Popper) -->
@@ -106,7 +111,7 @@
 	<!-- Page scripts -->
 	<script type="text/javascript">
 		// Constants
-		const obj_roles = {
+		const _obj_roles = {
 			// its: ["IT Specialist", "fa fa-user-tie"],
 			web: ["Web Developer", "fa fa-code"],
 			dba: ["Database Administrator", "fa fa-database"],
@@ -124,6 +129,7 @@
     .then((res) => res.json())
     .then((data) => {
 			obj = data;
+
 			// All technology tools
 			// Object.entries(data["tech"]).forEach(([tool, img]) => {  
 			// 	$("#row_tls .row").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
@@ -131,17 +137,17 @@
 		});
 
 		// Role Belt
-		for (const [key, val] of Object.entries(obj_roles))
+		for (const [key, val] of Object.entries(_obj_roles))
 			$("#row_rol").append(`
-				<a id="btn_${key}" class="btn btn-sm rounded-pill" title="${val[0]}" href="#">
-					<div class="d-flex align-items-center">
+				<button id="btn_${key}" class="btn btn-sm rounded-pill" title="${val[0]}" value="${key}">
+					<div class="d-flex align-items-center text-nowrap">
 						<i class="${val[1]} fa-2x mr-2 my-1"></i>
 						${val[0]}
 					</div>
-				</a>
+				</button>
 			`);
-		
-		$("#row_rol").hide();
+
+		$("#row_rol").children().hide();
 
 		// Get GET param
 		var getUrlParameter = function getUrlParameter(sParam) {
@@ -163,58 +169,100 @@
 		// Anim preliminaries
 		$("#div_con").hide();
 
-		setTimeout(function()	{
-			// Intro Anim
-			$(".inner-header").animate({"height": "30vh"})
-			// $(".content").animate({"height": "60vh"})
-			// $("#div_rol").animate({opacity: 1});
-			$("#row_rol").fadeIn();
+		// Add content to content div
+		function addContent(r)	{
+			var role = _obj_roles[r][0];
 
-			// Add content to content div
-			function addContent(role)	{
-				const obj_role = obj["roles"][role];
-				const obj_tech = obj["tech"];
+			const _obj_role = obj["roles"][role];
+			const _obj_tech = obj["tech"];
 
-				let output = `<p>${obj_role["desc"]}</p>`;
+			let output = `<p>${_obj_role["desc"]}</p>`;
 
-				if("proj" in obj_role)	{
-					output += `
-						<h5>${role}</h5>
-						<div class="row">
-							<div class="col-4">
+			if("proj" in _obj_role)	{
+				let obj_proj = _obj_role["proj"];
+
+				let temp = "";
+
+				for(const proj in obj_proj)	{
+					let tech = "";
+
+					obj_proj[proj]["tech"].forEach((t) =>	{
+						tech += `<img class="m-1  img_tech" style="height: 75px;" src="${_obj_tech[t]}" alt="${t}" title="${t}" loading="lazy">`;
+					});
+
+					
+								// <small style="line-height: 0;">${obj_proj[proj]["type"]}</small>
 								
+								// <img class="my-2 rounded-circle" src="https://i.natgeofe.com/n/de94c416-6d23-45f5-9708-e8d56289268e/naturepl_01132178.jpg?w=636&h=631" alt="© National Geographic" style="height: 150px;" />
+
+					temp += `
+						<div class="carousel-item">
+							<span class="h4 font-weight-bold" style="color: #00acc1;">Projects</span>
+							<div class="row mt-2">
+								<div class="col-sm-4">
+								<h5 class="">${proj === obj_proj[proj]["name"] ? obj_proj[proj]["name"] : (obj_proj[proj]["name"] + " (" + proj + ")")}</h5>
+								<p>${obj_proj[proj]["desc"]}</p>
+								</div>
+								<div class="col-sm-8 text-center">
+									
+								</div>
 							</div>
-							<div class="col-8">
-								
-							</div>
+							<span class="h4 font-weight-bold" style="color: #00acc1;">Technology Used</span>
+							<div class="d-flex overflow-auto">${tech}</div>
 						</div>
 					`;
 				}
-				else if("tech" in obj_role)	{
-					let row_too = "";
 
-					obj_role["tech"].forEach((t) => {
-						row_too += `<img class="m-1" style="height: 75px;" src="${obj_tech[t]}" alt="${t}" title="${t}">`;
-					});
-
-					output += `<div class="row justify-content-center">` + row_too + `</div>`;
-
-					// Object.entries(obj_role["tech"]).forEach(([tool, img]) => {
-						
-					// 	$("#row_tls .row").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
-					// });
-				}
-
-				$("#div_con").append(output).fadeIn();
+				output += `
+					<div class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							${temp}
+						</div>
+					</div>
+				`;
 			}
+			else if("tech" in _obj_role)	{
+				let row_too = "";
+
+				_obj_role["tech"].forEach((t) => {
+					row_too += `<img class="m-1" style="height: 75px;" src="${_obj_tech[t]}" alt="${t}" title="${t}">`;
+				});
+
+				output += `<div class="row justify-content-center">` + row_too + `</div>`;
+
+				// Object.entries(_obj_role["tech"]).forEach(([tool, img]) => {
+					
+				// 	$("#row_tls .row").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
+				// });
+			}
+
+			for(r in _obj_roles)	{
+				if(_obj_roles[r][0] === role)	{
+					console.log(r)
+
+					$("#car_con").append(`<div id="car_${r}" class="carousel-item">${output}</div>`);
+				}
+			}
+
+			$("#car_con").find("div.carousel-item:first-child").addClass("active");
+
+			$("#div_con").fadeIn();
+		}
+
+		setTimeout(function()	{
+			// Intro Anim
+			$(".inner-header").animate({"height": "30vh"})
+			$(".content").animate({"height": "55vh"})
+			
+			$("#row_rol").children().each(function(r)	{
+				$(this).fadeIn();
+			});
 
 			// Content Anim
 			setTimeout(function()	{
-				let get_data = getUrlParameter("role") ? (obj_roles[getUrlParameter("role")][0] || "IT Specialist") : "IT Specialist";
+				let get_data = getUrlParameter("role");
 
-				console.log(get_data);
-
-				typed_js([get_data]);
+				typed_js([_obj_roles[getUrlParameter("role")][0] || "IT Specialist"]);
 
 				addContent(get_data);
 
@@ -225,7 +273,20 @@
 		}, 3000)
 
 		$("#row_rol .btn").click(function()	{
-			addContent($(this).find("div").text().trim());
-		})
+			let slide = $("#car_con").find("#car_" + $(this).val());
+			let val = $(this).val();
+			// addContent($(this).val());
+
+			if(slide.length > 0)	{
+				console.log($("#car_con").find(".carousel-item"))
+
+				// $("#div_con").carousel();
+			}
+			else
+				addContent(val);
+
+			// console.log($("#car_con").find(".carousel-item").siblings("#car" + val).index())
+
+		});
 	</script>
 </html>

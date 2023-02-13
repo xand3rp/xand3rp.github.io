@@ -118,6 +118,10 @@ html {
 	#div_rol a	{
 		font-size: 10px;
 	}
+
+  .img_tech {
+    height: 50px!important;
+  }
 }
 
 /* // Small devices (landscape phones, 576px and up) */
@@ -141,13 +145,13 @@ html {
 }
 
 /* Custom Styles */
-#div_rol a.btn	{
+#row_rol .btn	{
 	/* position: relative; */
 	color: white;
-	text-decoration: none;
+	/* text-decoration: none; */
 }
 
-#div_rol a.btn:focus	{
+#row_rol .btn:focus	{
 	/* position: relative; */
 	background-color: white;
   color: #28a745;

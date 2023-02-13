@@ -35,7 +35,7 @@ body {
 } */
 
 .inner-header {
-  height: 60vh;
+  height: 50vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ body {
 
 .content {
   position: relative;
-  height: 30vh;
+  height: 45vh;
   /* text-align: center; */
   background-color: white;
   overflow: hidden;
