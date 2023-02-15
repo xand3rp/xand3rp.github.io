@@ -111,7 +111,7 @@
 	<!-- Page scripts -->
 	<script type="text/javascript">
 		// Constants
-		const _obj_roles = {
+		const _roles = {
 			// its: ["IT Specialist", "fa fa-user-tie"],
 			web: ["Web Developer", "fa fa-code"],
 			dba: ["Database Administrator", "fa fa-database"],
@@ -122,19 +122,25 @@
 			// liv: ["Livestreamer", "fa fa-broadcast-tower"]
 		};
 
-		var obj;
-
 		// Profile Content
-		fetch('assets/data.json')
-    .then((res) => res.json())
-    .then((data) => {
-			obj = data;
+		const fetch_json = fetch('assets/data.json')
+		.then((res) => res.json())
+		.then((data) => {
+			return data;
 
 			// All technology tools
 			// Object.entries(data["tech"]).forEach(([tool, img]) => {  
 			// 	$("#row_tls .row").append(`<img class="m-1" style="height: 75px;" src="${img}" alt="${tool}" title="${tool}">`);
 			// })
 		});
+
+		const _obj = async function()	{
+			let result = await fetch_json();
+
+			return result;
+		};
+
+		console.log(_obj);
 
 		// Role Belt
 		for (const [key, val] of Object.entries(_obj_roles))
@@ -171,10 +177,10 @@
 
 		// Add content to content div
 		function addContent(r)	{
-			var role = _obj_roles[r][0];
-
-			const _obj_role = obj["roles"][role];
+			const _obj_role = obj["roles"][r];
 			const _obj_tech = obj["tech"];
+
+			console.log(r);
 
 			let output = `<p>${_obj_role["desc"]}</p>`;
 
@@ -236,11 +242,13 @@
 				// });
 			}
 
-			for(r in _obj_roles)	{
-				if(_obj_roles[r][0] === role)	{
-					console.log(r)
+			for(key in _obj_roles)	{
+				console.log(_obj_roles[key][0] + " " + r) 
 
-					$("#car_con").append(`<div id="car_${r}" class="carousel-item">${output}</div>`);
+				if(_obj_roles[key][0] === r)	{
+					console.log(key)
+
+					$("#car_con").append(`<div id="car_${key}" class="carousel-item">${output}</div>`);
 				}
 			}
 
@@ -262,9 +270,13 @@
 			setTimeout(function()	{
 				let get_data = getUrlParameter("role");
 
-				typed_js([_obj_roles[getUrlParameter("role")][0] || "IT Specialist"]);
+				console.log(get_data)
 
-				addContent(get_data);
+				let role = get_data ? _obj_roles[getUrlParameter("role")][get_data][0] : "IT Specialist";
+
+				typed_js([role]);
+
+				addContent(role);
 
 				// $("#typed").text(get_data).fadeIn()
 
